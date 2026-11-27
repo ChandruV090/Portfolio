@@ -1,0 +1,307 @@
+{
+  "title": "Table mPOS System",
+  "kind": "Product — Mobile POS for dine-in",
+  "category": "products",
+  "size": "tall",
+  "year": "2026",
+  "order": 6,
+  "tagline": "Take the order at the table. Never miss a KOT.",
+  "summary": "A mobile point-of-sale platform redesigned from the ground up — faster ordering, smarter table management, and zero missed KOTs.",
+  "role": "UI/UX Designer",
+  "tools": [
+    "Figma",
+    "Photoshop"
+  ],
+  "color": "#1e1e1e",
+  "ink": "#F2F2F2",
+  "liveUrl": "https://www.behance.net/gallery/249920635/TablePOS-mPOS-System",
+  "facts": [
+    {
+      "label": "Role",
+      "value": "UI/UX Designer"
+    },
+    {
+      "label": "Product",
+      "value": "TablePOS — handheld mPOS for dine-in"
+    },
+    {
+      "label": "Timeline",
+      "value": "16 Weeks (Discover to Deliver)"
+    },
+    {
+      "label": "Grid",
+      "value": "375 px · 4 Cols · 12 Gutter · 16 Margin"
+    },
+    {
+      "label": "Scope",
+      "value": "Table Management, KOT Workflow, Split Bill & Payments"
+    },
+    {
+      "label": "Tools",
+      "value": "Figma, Photoshop"
+    }
+  ],
+  "stats": [
+    {
+      "value": "16 wks",
+      "label": "end-to-end design process from discovery to handoff"
+    },
+    {
+      "value": "< 30s",
+      "label": "target time to complete a table order"
+    },
+    {
+      "value": "3",
+      "label": "payment methods in one checkout: Card, Cash, UPI"
+    }
+  ],
+  "flow": [
+    "Pick a table",
+    "Filter & guest count",
+    "Menu & modifiers",
+    "Send KOT",
+    "Multi-KOT checkout",
+    "Split bill",
+    "Pay & print"
+  ],
+  "sections": [
+    {
+      "title": "Overview",
+      "text": [
+        "A mobile point-of-sale platform redesigned from the ground up for dine-in service — faster ordering, smarter table management, and zero missed KOTs."
+      ],
+      "bullets": [
+        {
+          "title": "Table Management",
+          "text": "A visual floor plan with live status: Available, Occupied, and Payment pending. Staff can merge and move tables in seconds."
+        },
+        {
+          "title": "KOT Workflow",
+          "text": "Multi-KOT ordering with time-locked editing, modifier cascades, and real-time kitchen sync. Never miss an item."
+        },
+        {
+          "title": "Split Bill & Payments",
+          "text": "Card, Cash, and UPI payments, with an equal split across guests. Each share is collected separately. Item-wise split is in progress."
+        }
+      ]
+    },
+    {
+      "title": "The Problem",
+      "text": [
+        "Traditional POS systems slowed down service and created operational inefficiencies."
+      ],
+      "bullets": [
+        {
+          "title": "Walking away from guests",
+          "text": "Servers left guests to walk to a fixed POS terminal to enter orders."
+        },
+        {
+          "title": "Long waits at peak hours",
+          "text": "Long wait times during peak hours reduced customer satisfaction."
+        },
+        {
+          "title": "Manual bill splitting",
+          "text": "Manual bill splitting caused delays and payment disputes."
+        },
+        {
+          "title": "Counter payment friction",
+          "text": "Payment processing at the counter created unnecessary customer friction."
+        }
+      ]
+    },
+    {
+      "title": "The Solution",
+      "text": [
+        "A mobile POS (mPOS) platform enabling end-to-end table-side operations."
+      ],
+      "bullets": [
+        {
+          "title": "Table-side order taking",
+          "text": "Table-side order taking, with modifiers and customisation."
+        },
+        {
+          "title": "Kitchen sync as KOTs",
+          "text": "Orders sync to the kitchen display and printers as KOTs."
+        },
+        {
+          "title": "Real-time table tracking",
+          "text": "Real-time table status and order tracking."
+        },
+        {
+          "title": "Flexible bill splitting",
+          "text": "Bill splitting by guest or by item, with card, cash, or UPI payment."
+        }
+      ]
+    },
+    {
+      "title": "Design Process (16 Weeks)",
+      "text": [
+        "Structured across four phases over 16 weeks, from floor discovery to usability testing and developer handoff."
+      ],
+      "bullets": [
+        {
+          "title": "Week 1–3 · Discover",
+          "text": "Stakeholder Interviews, Server & Manager Interviews, and Competitive Analysis."
+        },
+        {
+          "title": "Week 4–5 · Define",
+          "text": "Problem Statements, Personas, and Success Metrics."
+        },
+        {
+          "title": "Week 6–12 · Develop",
+          "text": "User Flows, Wireframes, and Hi-Fi UI Screens."
+        },
+        {
+          "title": "Week 13–16 · Deliver",
+          "text": "Interactive Prototype, Usability Testing, and QA & Dev Handoff."
+        }
+      ]
+    },
+    {
+      "title": "What the Discovery Changed",
+      "text": [
+        "The manager interviews shaped the table-status features. Floor managers needed to find which server owned which tables, and to see at a glance which tables were free, occupied, or waiting for payment.",
+        "The server interviews made the case for table-side ordering and a short cancel window before an order reached the kitchen."
+      ]
+    },
+    {
+      "title": "Persona",
+      "text": [
+        "Arjun Kumar (28, Bangalore, IND) is a Head Waiter and dine-in specialist with 5 years of experience. Arjun manages six to eight tables during peak hours. He needs an ordering system that is fast and reliable, so he can take orders at the table without interrupting guests."
+      ],
+      "bullets": [
+        {
+          "title": "Motivations",
+          "text": "Faster service, better guest experience, higher table turnover, and reduced order errors."
+        },
+        {
+          "title": "Goals",
+          "text": "Complete table orders in under 30 seconds, send orders instantly to the kitchen, manage modifiers without errors, and split bills quickly and accurately."
+        },
+        {
+          "title": "Pain Points",
+          "text": "Walking to a fixed POS terminal, re-entering orders after the app crashes, manual bill splitting in the middle of a busy service, and queues at the counter during peak hours."
+        }
+      ]
+    },
+    {
+      "title": "Grid System",
+      "text": [
+        "Built on a 375 px handheld artboard with a 4-column layout (12 px gutter, 16 px margin) so tap targets, item rows, and sticky checkout bars stay comfortable for one-handed use on the ATVA mPOS terminal."
+      ],
+      "images": [
+        "10-grid-system.jpg"
+      ],
+      "captions": [
+        "ATVA handheld mPOS terminal and 375 px 4-column grid specification"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Wireframe",
+      "text": [
+        "Ten low-fidelity grayscale wireframes mapping the core flows — table grid, menu and search, filter sheet, guest setup, table actions, and checkout quantity steppers — before applying visual hierarchy."
+      ],
+      "images": [
+        "11-wireframes.jpg"
+      ],
+      "captions": [
+        "Low-fidelity wireframes across table management, menu, filters, and checkout"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: Table Management",
+      "text": [
+        "Dine-in is the default view. Status is colour-coded: green for available, red for occupied, and orange for payment pending. Staff can filter by status, floor, minimum capacity, and assigned server, and search by server name to see which tables they cover."
+      ],
+      "images": [
+        "12-final-tables.jpg"
+      ],
+      "captions": [
+        "The table grid, filter sheet, and table details. Tapping an available table asks only for the guest count. The logged-in server is assigned automatically, and customer name and number are optional."
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: Menu and Ordering",
+      "text": [
+        "The menu has search, category chips, and veg, non-veg, and spice markers. Tapping Add turns the item into a quantity stepper. A bottom bar shows the item count and total, and the Checkout button moves the order forward. Items that need customisation step through size, toppings, and beverages before they are added."
+      ],
+      "images": [
+        "13-final-menu-order.jpg"
+      ],
+      "captions": [
+        "Menu with the quantity stepper, and the table actions sheet with Table Details, Merge, Move, and Close."
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: Checkout and KOT",
+      "text": [
+        "Checkout shows every KOT already sent, in order, along with any new items. Sent items are locked. New items are marked \"Not sent\" until they go to the kitchen as the next KOT. The totals cover the whole order, including service charge, discount, and CGST and SGST."
+      ],
+      "images": [
+        "14-final-checkout-split.jpg"
+      ],
+      "captions": [
+        "Checkout with KOT-1 (sent at 01:55 pm) and KOT-2 (sent at 02:12 pm). KOT-2 holds the items added after the first send."
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: Payment",
+      "text": [
+        "The payment method screen offers Card, Cash, and UPI. Split payment divides the bill equally across guests, and each share is collected separately with its own payment method. Once the bill is paid, the table returns to available (green)."
+      ],
+      "images": [
+        "15-final-payment.jpg"
+      ],
+      "captions": [
+        "Payment method, split payment, and the payment received screen. The payment received screen shows a countdown back to the floor, with an option to stay on the screen to print the bill first."
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Success Metrics",
+      "text": [
+        "These are the targets the design was built around, ready to benchmark once measured on the restaurant floor."
+      ],
+      "bullets": [
+        {
+          "title": "Time to complete a table order",
+          "text": "Target: Under 30 seconds."
+        },
+        {
+          "title": "Order sent to the kitchen",
+          "text": "Target: Instantly, on send."
+        },
+        {
+          "title": "Order errors from re-entry",
+          "text": "Target: Reduced."
+        },
+        {
+          "title": "Time to split a bill",
+          "text": "Target: Quicker than manual split."
+        }
+      ]
+    },
+    {
+      "title": "Outcome",
+      "bullets": [
+        {
+          "title": "Locked KOTs",
+          "text": "Once an order is sent, its items cannot be edited. Changes go out as a new KOT, so the kitchen always sees a clear record of what was sent and when."
+        },
+        {
+          "title": "Controlled cancellation",
+          "text": "Cancelling a sent KOT needs manager approval, which protects the kitchen and keeps a check on lost revenue."
+        },
+        {
+          "title": "Flexible payment",
+          "text": "Guests can pay by card, cash, or UPI, and the bill can be split equally across guests, with each share collected separately."
+        }
+      ]
+    }
+  ]
+}

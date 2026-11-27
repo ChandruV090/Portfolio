@@ -52,6 +52,7 @@ function Clock({ timezone, label }) {
 
 function Currently() {
   const c = site.currently;
+  if (!c || !c.company) return null;
   const name = c.href ? (
     <a href={c.href} target="_blank" rel="noreferrer">
       {c.company} <Icon name="arrow-up-right" size={14} />
@@ -80,13 +81,15 @@ function Currently() {
 }
 
 function Hero() {
-  const parts = site.company.href ? (
-    <a href={site.company.href} target="_blank" rel="noreferrer" className="accent">
-      @{site.company.name}
-    </a>
-  ) : (
-    <span className="accent">@{site.company.name}</span>
-  );
+  const parts = site.company?.name ? (
+    site.company.href ? (
+      <a href={site.company.href} target="_blank" rel="noreferrer" className="accent">
+        @{site.company.name}
+      </a>
+    ) : (
+      <span className="accent">@{site.company.name}</span>
+    )
+  ) : null;
   return (
     <div className="tile tile-hero">
       <div className="row between">
@@ -165,143 +168,69 @@ function GlobeTile() {
 
 function ProjectTile({ project }) {
   const href = `/work/${project.slug}`;
+  const status = project.status || "Case study";
+  const desc = project.tagline || project.summary;
 
-  if (project.variant === "card") {
-    return (
-      <article className="tile tile-card">
-        <Link href={href} className="card-cover" aria-label={project.title}>
-          <Cover project={project} variant="card" />
-          <span className="pill-tag pill-tag-light">{project.status}</span>
-        </Link>
-        <div className="card-body">
-          <span className="label">{project.kind}</span>
-          <h3>{project.title}</h3>
-          <p className="muted">{project.summary}</p>
-          <div className="row gap">
-            <Link href={href} className="pill-btn">
-              Case study <Icon name="arrow-right" size={15} />
-            </Link>
-            {project.liveUrl ? (
-              <a href={project.liveUrl} target="_blank" rel="noreferrer" className="pill-btn pill-btn-cream">
-                Try it <Icon name="arrow-up-right" size={15} />
-              </a>
-            ) : null}
-          </div>
-        </div>
-      </article>
-    );
-  }
-
-  const feature = project.variant === "feature";
   return (
-    <Link
-      href={href}
-      className={`tile tile-media media-${project.column} ${feature ? "media-feature" : "media-art"}`}
-    >
-      <Cover project={project} variant={feature ? "feature" : "art"} />
-      <span className="pill-tag pill-tag-dark">{project.kind}</span>
-      {feature ? <span className="pill-tag pill-tag-light pill-tag-right">{project.status}</span> : null}
-      <div className="glass-bar">
-        <div>
-          <h3>{project.title}</h3>
-          <p>{project.summary}</p>
+    <article className="tile tile-card">
+      <Link href={href} className="card-cover" aria-label={project.title}>
+        <Cover project={project} variant="card" />
+        <span className="pill-tag pill-tag-light">{status}</span>
+      </Link>
+      <div className="card-body">
+        <span className="label">{project.kind}</span>
+        <h3>{project.title}</h3>
+        <p className="muted">{desc}</p>
+        <div className="row gap">
+          <Link href={href} className="pill-btn">
+            Case study <Icon name="arrow-right" size={15} />
+          </Link>
+          {project.liveUrl ? (
+            <a href={project.liveUrl} target="_blank" rel="noreferrer" className="pill-btn pill-btn-cream">
+              Try it <Icon name="arrow-up-right" size={15} />
+            </a>
+          ) : null}
         </div>
-        <span className="circle-btn" aria-hidden="true">
-          <Icon name="arrow-up-right" size={18} />
-        </span>
       </div>
-    </Link>
+    </article>
   );
 }
 
 export default function Home() {
   const [filter, setFilter] = useState("all");
-  const [done, setDone] = useState(site.todos.map((t) => t.done));
 
   const visible = projects.filter((p) => filter === "all" || p.category === filter);
-  const col = (name) => visible.filter((p) => p.column === name);
-  const right = col("right");
-  const doneCount = done.filter(Boolean).length;
 
   return (
     <main className="page">
-      <div className="cols">
-        <div className="col">
-          <Currently />
-          {col("left").map((p) => (
-            <ProjectTile key={p.slug} project={p} />
-          ))}
-        </div>
-
-        <div className="col">
-          <Hero />
-          {col("mid").map((p) => (
-            <ProjectTile key={p.slug} project={p} />
-          ))}
-        </div>
-
-        <div className="col">
-          {right[0] ? <ProjectTile project={right[0]} /> : null}
-          <GlobeTile />
-          {right.slice(1).map((p) => (
-            <ProjectTile key={p.slug} project={p} />
-          ))}
-        </div>
+      <div className="hero-row">
+        <Hero />
+        <GlobeTile />
       </div>
 
-      <section className="cols3">
-        <div className="tile">
-          <div className="row between">
-            <span className="label">Tools</span>
+      <div className="projects-bento">
+        {visible.map((p) => (
+          <div key={p.slug} className="project-item">
+            <ProjectTile project={p} />
           </div>
-          <ul className="tool-list">
+        ))}
+      </div>
+
+      {site.tools?.length ? (
+        <section className="tile tile-tools">
+          <div className="row between">
+            <span className="label">Tools &amp; Stack</span>
+          </div>
+          <div className="tools-pills-row">
             {site.tools.map((t) => (
-              <li key={t.name}>
+              <div key={t.name} className="tool-chip">
                 <span>{t.name}</span>
                 <em>{t.level}</em>
-              </li>
+              </div>
             ))}
-          </ul>
-        </div>
-
-        <div className="tile">
-          <div className="row between">
-            <span className="label">To-do</span>
-            <span className="label">
-              {doneCount}/{site.todos.length}
-            </span>
           </div>
-          <ul className="todo-list">
-            {site.todos.map((t, i) => (
-              <li key={t.text}>
-                <label>
-                  <input
-                    type="checkbox"
-                    checked={done[i]}
-                    onChange={() => setDone((d) => d.map((x, j) => (j === i ? !x : x)))}
-                  />
-                  <span>{t.text}</span>
-                </label>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="tile">
-          <span className="label">How I work</span>
-          <ol className="principles">
-            {site.principles.map((p) => (
-              <li key={p.n}>
-                <b>{p.n}</b>
-                <div>
-                  <strong>{p.title}</strong>
-                  <p className="muted">{p.text}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
+        </section>
+      ) : null}
 
       <section className="tile tile-contact" id="contact">
         <span className="label">Contact</span>

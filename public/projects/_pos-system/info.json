@@ -1,0 +1,36 @@
+{
+  "title": "POS System",
+  "kind": "Product — Point of sale",
+  "category": "products",
+  "size": "l",
+  "year": "2026",
+  "order": 1,
+  "tagline": "Checkout at the speed of a tap.",
+  "summary": "A point-of-sale experience designed for speed at the counter.",
+  "role": "UX/UI Designer",
+  "tools": [
+    "Figma",
+    "FigJam"
+  ],
+  "color": "#161616",
+  "ink": "#F2F2F2",
+  "liveUrl": null,
+  "sections": [
+    {
+      "title": "Overview",
+      "text": "Replace this with a short summary of the project, the client or team, and what you were asked to do."
+    },
+    {
+      "title": "The problem",
+      "text": "Describe the problem users faced and what was at stake."
+    },
+    {
+      "title": "Process",
+      "text": "Walk through research, flows, wireframes, iterations and testing."
+    },
+    {
+      "title": "Outcome",
+      "text": "Share what shipped and the impact — metrics, feedback, learnings."
+    }
+  ]
+}

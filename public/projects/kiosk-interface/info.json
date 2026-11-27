@@ -1,0 +1,326 @@
+{
+  "title": "OneHubPOS Kiosk",
+  "kind": "Product — Self-ordering kiosk",
+  "category": "design",
+  "size": "wide",
+  "year": "2026",
+  "order": 2,
+  "tagline": "From first tap to order number, in eight simple steps.",
+  "summary": "A self-ordering kiosk for OneHubPOS: guests choose Dine In or Take Out, build their meal, pay and get an order number — no queue, no instructions, no staff needed.",
+  "role": "UX/UI Designer",
+  "tools": [
+    "Figma"
+  ],
+  "color": "#1c1c1c",
+  "ink": "#F2F2F2",
+  "liveUrl": null,
+  "facts": [
+    {
+      "label": "Role",
+      "value": "UX/UI Designer"
+    },
+    {
+      "label": "Product",
+      "value": "OneHubPOS — guest-facing kiosk"
+    },
+    {
+      "label": "Platform",
+      "value": "Portrait touchscreen kiosk"
+    },
+    {
+      "label": "Scope",
+      "value": "End-to-end ordering flow, 9 key screens"
+    },
+    {
+      "label": "Tools",
+      "value": "Figma"
+    }
+  ],
+  "stats": [
+    {
+      "value": "9",
+      "label": "key screens designed"
+    },
+    {
+      "value": "8",
+      "label": "steps from first tap to order number"
+    },
+    {
+      "value": "30s",
+      "label": "inactivity reset on every private screen"
+    }
+  ],
+  "flow": [
+    "Welcome",
+    "Phone number",
+    "Your details",
+    "Menu",
+    "Customise",
+    "Cart",
+    "Payment",
+    "Confirmation"
+  ],
+  "sections": [
+    {
+      "title": "Background",
+      "text": [
+        "OneHubPOS is a point-of-sale system for restaurants. Staff already use it behind the counter, and this project takes the same product to the other side of the counter: a portrait touchscreen kiosk where guests order and pay for themselves.",
+        "I designed the guest-facing experience end to end, from the welcome screen to the order number, so it feels like part of the same product family while working for people who have never seen it before."
+      ]
+    },
+    {
+      "title": "Challenge",
+      "text": [
+        "How might we let a first-time guest order a full meal without asking anyone for help, while still letting a regular finish in a few taps?",
+        "A kiosk has no staff to explain things, a queue may be forming behind the guest, and restaurant orders are rarely simple. Sizes, halves, toppings and quantities all have to feel easy on a touchscreen."
+      ]
+    },
+    {
+      "title": "The Problem",
+      "text": [
+        "Guests are on their feet, often in a hurry, and every extra decision costs patience. Menus are big, customisation is detailed, and a mistake at the kiosk becomes a wrong order in the kitchen.",
+        "For the restaurant, the pain is the counter: staff spend their rush taking simple orders and fixing misunderstandings instead of preparing food."
+      ],
+      "bullets": [
+        {
+          "title": "For guests",
+          "text": "Unclear next steps, small touch targets, hidden prices and no way back when they change their mind."
+        },
+        {
+          "title": "For the restaurant",
+          "text": "Queues at the counter, order mistakes, and staff time spent on routine ordering."
+        }
+      ]
+    },
+    {
+      "title": "Impact",
+      "text": [
+        "What the design is built to change, before it goes in front of real guests:"
+      ],
+      "bullets": [
+        {
+          "title": "Shorter queues",
+          "text": "Guests order on their own, which frees staff for food and service."
+        },
+        {
+          "title": "Fewer order mistakes",
+          "text": "Required and optional choices are labelled and every price change is visible before adding."
+        },
+        {
+          "title": "More confident guests",
+          "text": "One decision per screen, always-visible total and a clear confirmation."
+        },
+        {
+          "title": "Consistent system",
+          "text": "Nine screens built from a small set of reusable components, so the kiosk is easier to extend and build."
+        }
+      ]
+    },
+    {
+      "title": "Research Insights",
+      "text": [
+        "These insights come from reviewing how self-service ordering works in general and from the constraints of the setting. They are not from interviews I ran myself, and I would validate each one on a real kiosk."
+      ],
+      "bullets": [
+        {
+          "title": "People order standing up",
+          "text": "Attention is short and there is often a queue, so every screen has to explain itself in a glance."
+        },
+        {
+          "title": "Touch is less precise than a mouse",
+          "text": "Targets need to be large and spaced, and the numpad has to be oversized."
+        },
+        {
+          "title": "Guests fear surprises at the end",
+          "text": "Showing subtotal, tax and total before payment builds trust."
+        },
+        {
+          "title": "Customisation is the confusing part",
+          "text": "Guests need to see what is required, what is optional and what each choice costs."
+        },
+        {
+          "title": "A shared screen is a privacy risk",
+          "text": "Personal details must never stay on screen for the next person."
+        }
+      ]
+    },
+    {
+      "title": "Design Process",
+      "text": [
+        "I kept the process light and focused on getting the flow right before polishing screens."
+      ],
+      "bullets": [
+        {
+          "title": "1. Understand",
+          "text": "Define the guest, the setting and what the kiosk must do inside OneHubPOS."
+        },
+        {
+          "title": "2. Map the flow",
+          "text": "Lay out every step from first tap to order number, including exits and the reset."
+        },
+        {
+          "title": "3. Wireframe",
+          "text": "Sketch lo-fi screens to settle layout and hierarchy without colour or photos getting in the way."
+        },
+        {
+          "title": "4. Design",
+          "text": "Build the hi-fi screens in Figma with a small set of reusable components."
+        },
+        {
+          "title": "5. Refine",
+          "text": "Check touch targets, states and copy across all nine key screens."
+        },
+        {
+          "title": "6. Test next",
+          "text": "The next step is to put it on a real kiosk with first-time guests."
+        }
+      ]
+    },
+    {
+      "title": "User Flow Mapping",
+      "text": [
+        "I mapped the whole journey before drawing any screen. It is eight steps with one main path: Welcome, phone number, details, menu, customise, cart, payment and confirmation.",
+        "Two decisions shape it: Dine In or Take Out at the start, and Pay Here or Pay at Counter at the end. Customising and adding more items loop between the menu and the cart. On every private screen an inactivity timer returns the kiosk to Welcome."
+      ],
+      "images": [
+        "13-user-flow.png"
+      ],
+      "captions": [
+        "End-to-end user flow with decisions and the 30 second reset"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Lo-fi Wireframes",
+      "text": [
+        "I started with grayscale wireframes of the three screens that carry the most weight: the welcome, the menu and the customise modal. They let me settle hierarchy and spacing before any photography or colour.",
+        "The decisions made here carried straight into the final design: two equal choices on the welcome, a persistent category list beside a two-column grid, and a modal over the menu so context stays visible."
+      ],
+      "images": [
+        "10-wire-welcome.png",
+        "11-wire-menu.png",
+        "12-wire-customise.png"
+      ],
+      "captions": [
+        "Welcome — one choice, two equal buttons",
+        "Menu — categories, search, grid, total bar",
+        "Customise — required and optional groups"
+      ],
+      "layout": "phones"
+    },
+    {
+      "title": "Key Design Decisions",
+      "bullets": [
+        {
+          "title": "One decision per screen",
+          "text": "Every screen asks for one thing, so nobody scans a busy page to know what to do next."
+        },
+        {
+          "title": "Big, forgiving touch targets",
+          "text": "Large buttons, a full-screen numpad and generous spacing for imprecise fingers."
+        },
+        {
+          "title": "Never leave the guest stranded",
+          "text": "Cancel, back and the running total are always in reach, and a 30 second timer resets the kiosk for the next person."
+        },
+        {
+          "title": "Make customisation legible",
+          "text": "Required and optional are tagged with counts, each half of a half-and-half pizza has its own options and prices show before adding."
+        },
+        {
+          "title": "Be upfront about cost and wait",
+          "text": "Subtotal, tax and total appear before payment, and the confirmation shows an estimated time."
+        },
+        {
+          "title": "Photo-led menu",
+          "text": "Large food photos make browsing quick and feel appetising rather than corporate."
+        }
+      ]
+    },
+    {
+      "title": "Hi-Fi Design: Getting in",
+      "text": [
+        "The first screen carries the only choice that matters: Dine In or Take Out. Two equal buttons sit on a warm orange hero image of a burger, fries and cola. It should feel appetising rather than corporate, and the choice carries through the rest of the flow. The menu keeps a small Dine In / Take Out toggle in case someone changes their mind.",
+        "To identify the guest without a keyboard, I used a large numpad for the phone number, with the country code already in place and a clear Clear and Continue pair. The next screen asks for a name, and each field explains why it is needed: \"We'll text you order updates and pickup notifications\" and \"We'll use this name when your order is ready.\"",
+        "Every private screen shows a 30-second inactivity message and sends the kiosk back to the welcome screen, so one guest's phone number is never left on screen for the next."
+      ],
+      "images": [
+        "01-welcome.png",
+        "02-phone-number.png",
+        "03-your-details.png"
+      ],
+      "captions": [
+        "Welcome — Dine In or Take Out",
+        "Phone number on a large numpad",
+        "Name and details, with a reason for each field"
+      ],
+      "layout": "phones"
+    },
+    {
+      "title": "Hi-Fi Design: Finding and building the order",
+      "text": [
+        "The menu is photo-led. A left-hand category list stays put while the guest browses, and a two-column grid of big food photos makes browsing quick. Search sits right above the grid for anyone who already knows what they want. Inside a category, each item shows a photo, name, price in green, a one-line description and a clear Add button, with View More for the details.",
+        "A bar at the bottom keeps Cancel Order and the live cart total in view on every menu screen, so guests always know where they stand.",
+        "Customisation is where kiosks usually get confusing, so I put it in a modal over the menu to keep the context visible behind it. In the half-and-half pizza, sizes are radio options with the extra price beside each one. Choices are tagged Required or Optional with a count (\"Select 2\", \"Choose up to 3\"), each half has its own customisation, and a quantity stepper sits next to a primary button that shows the price."
+      ],
+      "images": [
+        "04-menu.png",
+        "05-category-list.png",
+        "06-customise.png"
+      ],
+      "captions": [
+        "Menu with category navigation and a live cart total",
+        "Category list with price and quick add",
+        "Item details for a half-and-half pizza"
+      ],
+      "layout": "phones"
+    },
+    {
+      "title": "Hi-Fi Design: Checking out",
+      "text": [
+        "The cart reads like a receipt the guest can edit. Each line has a thumbnail, a Customize chip that reminds them they changed something, a quantity stepper and a bin icon. Add More Items sits right below the list, and the Sub Total, Tax and Total break down before the Proceed to Checkout button, with the total in green.",
+        "Payment is one question with two big answers: Pay Here (Card) or Pay at Counter (Cash). The totals repeat, so there is no surprise at the last step.",
+        "The confirmation screen gives the guest what they need and nothing more: a clear success state, the order number, table and order type, the itemised order, the total paid and an estimated wait. Place Another Order starts again, and if nobody touches the screen, it resets itself in 30 seconds."
+      ],
+      "images": [
+        "07-cart.png",
+        "08-payment.png",
+        "09-confirmation.png"
+      ],
+      "captions": [
+        "Cart with editable lines and a clear total",
+        "Pay here or at the counter",
+        "Confirmation with order number and wait time"
+      ],
+      "layout": "phones"
+    },
+    {
+      "title": "Outcome",
+      "text": [
+        "The result is a complete guest flow of nine key screens built from a small set of reusable parts: radio and checkbox options, tabs, quantity steppers, price tags, primary and secondary buttons and category cards. Because they repeat across screens, the kiosk feels consistent and is easier to build.",
+        "The design is ready to be tested on a real kiosk with first-time guests."
+      ]
+    },
+    {
+      "title": "Where it goes next",
+      "bullets": [
+        {
+          "title": "Test on a real kiosk",
+          "text": "Watch first-time guests order and measure time to order and where they hesitate, especially in customisation."
+        },
+        {
+          "title": "Accessibility mode",
+          "text": "A larger text option and a lower layout for wheelchair users and shorter guests."
+        },
+        {
+          "title": "Languages",
+          "text": "A language switch on the welcome screen for busy, multilingual locations."
+        },
+        {
+          "title": "Upsell moments",
+          "text": "Quiet suggestions in the cart (a drink with a burger) without slowing down checkout."
+        }
+      ]
+    }
+  ]
+}

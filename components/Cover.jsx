@@ -1,4 +1,60 @@
-// Project cover: shows project.image if set, otherwise a styled placeholder.
+// Project cover: shows interactive animated components for flagship projects,
+// project.image if set, or a styled vector screen placeholder.
+
+import KioskFanCard from "./KioskFanCard";
+
+function PosMockScreen() {
+  return (
+    <div className="pos-cover-screen">
+      <div className="pos-screen-bar">
+        <div className="pos-screen-dots">
+          <span />
+          <span />
+          <span />
+        </div>
+        <span className="pos-screen-title">OneHubPOS Terminal</span>
+        <span className="pos-screen-status">● Live</span>
+      </div>
+      <div className="pos-screen-content">
+        <div className="pos-screen-left">
+          <div className="pos-item-grid">
+            <div className="pos-item-tile active">
+              <span className="pos-icon">🍔</span>
+              <span className="pos-name">Burger</span>
+              <span className="pos-price">$9.50</span>
+            </div>
+            <div className="pos-item-tile">
+              <span className="pos-icon">🍟</span>
+              <span className="pos-name">Fries</span>
+              <span className="pos-price">$4.00</span>
+            </div>
+            <div className="pos-item-tile">
+              <span className="pos-icon">🥤</span>
+              <span className="pos-name">Soda</span>
+              <span className="pos-price">$2.50</span>
+            </div>
+            <div className="pos-item-tile">
+              <span className="pos-icon">☕</span>
+              <span className="pos-name">Coffee</span>
+              <span className="pos-price">$3.75</span>
+            </div>
+          </div>
+        </div>
+        <div className="pos-screen-right">
+          <div className="pos-ticket">
+            <div className="pos-ticket-head">
+              <span>Order #204</span>
+              <b>$16.00</b>
+            </div>
+            <div className="pos-ticket-line" />
+            <div className="pos-ticket-sub">Dine In • Table 06</div>
+            <div className="pos-ticket-btn">Tap to Pay</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function MockScreen({ project, light }) {
   return (
@@ -8,7 +64,7 @@ function MockScreen({ project, light }) {
         <span />
         <span />
         <span />
-        <b style={{ background: project.color }} />
+        <b style={{ background: project.color || "#2B6BF0" }} />
       </div>
       <div className="mock-hero">
         <div className="mock-h1" />
@@ -16,7 +72,7 @@ function MockScreen({ project, light }) {
         <div className="mock-p" />
         <div className="mock-p short" />
         <div className="mock-btns">
-          <u style={{ background: project.color }} />
+          <u style={{ background: project.color || "#2B6BF0" }} />
           <u className="dark" />
         </div>
       </div>
@@ -25,9 +81,24 @@ function MockScreen({ project, light }) {
 }
 
 export default function Cover({ project, variant }) {
+  // Flagship interactive preview for Self-Ordering Kiosk
+  if (project.slug === "kiosk-interface") {
+    return <KioskFanCard compact={variant === "card"} showSteps={variant !== "card"} />;
+  }
+
+  // If an image is available (e.g. user uploaded cover.jpg), prioritize it!
   if (project.image) {
     // eslint-disable-next-line @next/next/no-img-element
     return <img className="cover-img" src={project.image} alt={project.title} loading="lazy" />;
+  }
+
+  // Interactive checkout terminal for POS System fallback
+  if (project.slug === "pos-system") {
+    return (
+      <div className="cover cover-pos">
+        <PosMockScreen />
+      </div>
+    );
   }
 
   if (variant === "feature") {

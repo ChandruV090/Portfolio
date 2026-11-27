@@ -1,0 +1,1936 @@
+[
+  {
+    "slug": "kiosk-interface",
+    "title": "OneHubPOS Kiosk",
+    "kind": "Product — Self-ordering kiosk",
+    "category": "design",
+    "size": "wide",
+    "variant": "card",
+    "order": 2,
+    "year": "2026",
+    "color": "#1c1c1c",
+    "ink": "#F2F2F2",
+    "tagline": "From first tap to order number, in eight simple steps.",
+    "summary": "A self-ordering kiosk for OneHubPOS: guests choose Dine In or Take Out, build their meal, pay and get an order number — no queue, no instructions, no staff needed.",
+    "role": "UX/UI Designer",
+    "tools": [
+      "Figma"
+    ],
+    "liveUrl": null,
+    "image": "/projects/kiosk-interface/cover.jpg",
+    "gallery": [
+      "/projects/kiosk-interface/01-welcome.png",
+      "/projects/kiosk-interface/02-phone-number.png",
+      "/projects/kiosk-interface/03-your-details.png",
+      "/projects/kiosk-interface/04-menu.png",
+      "/projects/kiosk-interface/05-category-list.png",
+      "/projects/kiosk-interface/06-customise.png",
+      "/projects/kiosk-interface/07-cart.png",
+      "/projects/kiosk-interface/08-payment.png",
+      "/projects/kiosk-interface/09-confirmation.png",
+      "/projects/kiosk-interface/10-wire-welcome.png",
+      "/projects/kiosk-interface/11-wire-menu.png",
+      "/projects/kiosk-interface/12-wire-customise.png",
+      "/projects/kiosk-interface/13-user-flow.png",
+      "/projects/kiosk-interface/kiosk-shot.jpg"
+    ],
+    "facts": [
+      {
+        "label": "Role",
+        "value": "UX/UI Designer"
+      },
+      {
+        "label": "Product",
+        "value": "OneHubPOS — guest-facing kiosk"
+      },
+      {
+        "label": "Platform",
+        "value": "Portrait touchscreen kiosk"
+      },
+      {
+        "label": "Scope",
+        "value": "End-to-end ordering flow, 9 key screens"
+      },
+      {
+        "label": "Tools",
+        "value": "Figma"
+      }
+    ],
+    "stats": [
+      {
+        "value": "9",
+        "label": "key screens designed"
+      },
+      {
+        "value": "8",
+        "label": "steps from first tap to order number"
+      },
+      {
+        "value": "30s",
+        "label": "inactivity reset on every private screen"
+      }
+    ],
+    "flow": [
+      "Welcome",
+      "Phone number",
+      "Your details",
+      "Menu",
+      "Customise",
+      "Cart",
+      "Payment",
+      "Confirmation"
+    ],
+    "sections": [
+      {
+        "title": "Background",
+        "text": [
+          "OneHubPOS is a point-of-sale system for restaurants. Staff already use it behind the counter, and this project takes the same product to the other side of the counter: a portrait touchscreen kiosk where guests order and pay for themselves.",
+          "I designed the guest-facing experience end to end, from the welcome screen to the order number, so it feels like part of the same product family while working for people who have never seen it before."
+        ]
+      },
+      {
+        "title": "Challenge",
+        "text": [
+          "How might we let a first-time guest order a full meal without asking anyone for help, while still letting a regular finish in a few taps?",
+          "A kiosk has no staff to explain things, a queue may be forming behind the guest, and restaurant orders are rarely simple. Sizes, halves, toppings and quantities all have to feel easy on a touchscreen."
+        ]
+      },
+      {
+        "title": "The Problem",
+        "text": [
+          "Guests are on their feet, often in a hurry, and every extra decision costs patience. Menus are big, customisation is detailed, and a mistake at the kiosk becomes a wrong order in the kitchen.",
+          "For the restaurant, the pain is the counter: staff spend their rush taking simple orders and fixing misunderstandings instead of preparing food."
+        ],
+        "bullets": [
+          {
+            "title": "For guests",
+            "text": "Unclear next steps, small touch targets, hidden prices and no way back when they change their mind."
+          },
+          {
+            "title": "For the restaurant",
+            "text": "Queues at the counter, order mistakes, and staff time spent on routine ordering."
+          }
+        ]
+      },
+      {
+        "title": "Impact",
+        "text": [
+          "What the design is built to change, before it goes in front of real guests:"
+        ],
+        "bullets": [
+          {
+            "title": "Shorter queues",
+            "text": "Guests order on their own, which frees staff for food and service."
+          },
+          {
+            "title": "Fewer order mistakes",
+            "text": "Required and optional choices are labelled and every price change is visible before adding."
+          },
+          {
+            "title": "More confident guests",
+            "text": "One decision per screen, always-visible total and a clear confirmation."
+          },
+          {
+            "title": "Consistent system",
+            "text": "Nine screens built from a small set of reusable components, so the kiosk is easier to extend and build."
+          }
+        ]
+      },
+      {
+        "title": "Research Insights",
+        "text": [
+          "These insights come from reviewing how self-service ordering works in general and from the constraints of the setting. They are not from interviews I ran myself, and I would validate each one on a real kiosk."
+        ],
+        "bullets": [
+          {
+            "title": "People order standing up",
+            "text": "Attention is short and there is often a queue, so every screen has to explain itself in a glance."
+          },
+          {
+            "title": "Touch is less precise than a mouse",
+            "text": "Targets need to be large and spaced, and the numpad has to be oversized."
+          },
+          {
+            "title": "Guests fear surprises at the end",
+            "text": "Showing subtotal, tax and total before payment builds trust."
+          },
+          {
+            "title": "Customisation is the confusing part",
+            "text": "Guests need to see what is required, what is optional and what each choice costs."
+          },
+          {
+            "title": "A shared screen is a privacy risk",
+            "text": "Personal details must never stay on screen for the next person."
+          }
+        ]
+      },
+      {
+        "title": "Design Process",
+        "text": [
+          "I kept the process light and focused on getting the flow right before polishing screens."
+        ],
+        "bullets": [
+          {
+            "title": "1. Understand",
+            "text": "Define the guest, the setting and what the kiosk must do inside OneHubPOS."
+          },
+          {
+            "title": "2. Map the flow",
+            "text": "Lay out every step from first tap to order number, including exits and the reset."
+          },
+          {
+            "title": "3. Wireframe",
+            "text": "Sketch lo-fi screens to settle layout and hierarchy without colour or photos getting in the way."
+          },
+          {
+            "title": "4. Design",
+            "text": "Build the hi-fi screens in Figma with a small set of reusable components."
+          },
+          {
+            "title": "5. Refine",
+            "text": "Check touch targets, states and copy across all nine key screens."
+          },
+          {
+            "title": "6. Test next",
+            "text": "The next step is to put it on a real kiosk with first-time guests."
+          }
+        ]
+      },
+      {
+        "title": "User Flow Mapping",
+        "text": [
+          "I mapped the whole journey before drawing any screen. It is eight steps with one main path: Welcome, phone number, details, menu, customise, cart, payment and confirmation.",
+          "Two decisions shape it: Dine In or Take Out at the start, and Pay Here or Pay at Counter at the end. Customising and adding more items loop between the menu and the cart. On every private screen an inactivity timer returns the kiosk to Welcome."
+        ],
+        "images": [
+          "/projects/kiosk-interface/13-user-flow.png"
+        ],
+        "captions": [
+          "End-to-end user flow with decisions and the 30 second reset"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Lo-fi Wireframes",
+        "text": [
+          "I started with grayscale wireframes of the three screens that carry the most weight: the welcome, the menu and the customise modal. They let me settle hierarchy and spacing before any photography or colour.",
+          "The decisions made here carried straight into the final design: two equal choices on the welcome, a persistent category list beside a two-column grid, and a modal over the menu so context stays visible."
+        ],
+        "images": [
+          "/projects/kiosk-interface/10-wire-welcome.png",
+          "/projects/kiosk-interface/11-wire-menu.png",
+          "/projects/kiosk-interface/12-wire-customise.png"
+        ],
+        "captions": [
+          "Welcome — one choice, two equal buttons",
+          "Menu — categories, search, grid, total bar",
+          "Customise — required and optional groups"
+        ],
+        "layout": "phones"
+      },
+      {
+        "title": "Key Design Decisions",
+        "bullets": [
+          {
+            "title": "One decision per screen",
+            "text": "Every screen asks for one thing, so nobody scans a busy page to know what to do next."
+          },
+          {
+            "title": "Big, forgiving touch targets",
+            "text": "Large buttons, a full-screen numpad and generous spacing for imprecise fingers."
+          },
+          {
+            "title": "Never leave the guest stranded",
+            "text": "Cancel, back and the running total are always in reach, and a 30 second timer resets the kiosk for the next person."
+          },
+          {
+            "title": "Make customisation legible",
+            "text": "Required and optional are tagged with counts, each half of a half-and-half pizza has its own options and prices show before adding."
+          },
+          {
+            "title": "Be upfront about cost and wait",
+            "text": "Subtotal, tax and total appear before payment, and the confirmation shows an estimated time."
+          },
+          {
+            "title": "Photo-led menu",
+            "text": "Large food photos make browsing quick and feel appetising rather than corporate."
+          }
+        ]
+      },
+      {
+        "title": "Hi-Fi Design: Getting in",
+        "text": [
+          "The first screen carries the only choice that matters: Dine In or Take Out. Two equal buttons sit on a warm orange hero image of a burger, fries and cola. It should feel appetising rather than corporate, and the choice carries through the rest of the flow. The menu keeps a small Dine In / Take Out toggle in case someone changes their mind.",
+          "To identify the guest without a keyboard, I used a large numpad for the phone number, with the country code already in place and a clear Clear and Continue pair. The next screen asks for a name, and each field explains why it is needed: \"We'll text you order updates and pickup notifications\" and \"We'll use this name when your order is ready.\"",
+          "Every private screen shows a 30-second inactivity message and sends the kiosk back to the welcome screen, so one guest's phone number is never left on screen for the next."
+        ],
+        "images": [
+          "/projects/kiosk-interface/01-welcome.png",
+          "/projects/kiosk-interface/02-phone-number.png",
+          "/projects/kiosk-interface/03-your-details.png"
+        ],
+        "captions": [
+          "Welcome — Dine In or Take Out",
+          "Phone number on a large numpad",
+          "Name and details, with a reason for each field"
+        ],
+        "layout": "phones"
+      },
+      {
+        "title": "Hi-Fi Design: Finding and building the order",
+        "text": [
+          "The menu is photo-led. A left-hand category list stays put while the guest browses, and a two-column grid of big food photos makes browsing quick. Search sits right above the grid for anyone who already knows what they want. Inside a category, each item shows a photo, name, price in green, a one-line description and a clear Add button, with View More for the details.",
+          "A bar at the bottom keeps Cancel Order and the live cart total in view on every menu screen, so guests always know where they stand.",
+          "Customisation is where kiosks usually get confusing, so I put it in a modal over the menu to keep the context visible behind it. In the half-and-half pizza, sizes are radio options with the extra price beside each one. Choices are tagged Required or Optional with a count (\"Select 2\", \"Choose up to 3\"), each half has its own customisation, and a quantity stepper sits next to a primary button that shows the price."
+        ],
+        "images": [
+          "/projects/kiosk-interface/04-menu.png",
+          "/projects/kiosk-interface/05-category-list.png",
+          "/projects/kiosk-interface/06-customise.png"
+        ],
+        "captions": [
+          "Menu with category navigation and a live cart total",
+          "Category list with price and quick add",
+          "Item details for a half-and-half pizza"
+        ],
+        "layout": "phones"
+      },
+      {
+        "title": "Hi-Fi Design: Checking out",
+        "text": [
+          "The cart reads like a receipt the guest can edit. Each line has a thumbnail, a Customize chip that reminds them they changed something, a quantity stepper and a bin icon. Add More Items sits right below the list, and the Sub Total, Tax and Total break down before the Proceed to Checkout button, with the total in green.",
+          "Payment is one question with two big answers: Pay Here (Card) or Pay at Counter (Cash). The totals repeat, so there is no surprise at the last step.",
+          "The confirmation screen gives the guest what they need and nothing more: a clear success state, the order number, table and order type, the itemised order, the total paid and an estimated wait. Place Another Order starts again, and if nobody touches the screen, it resets itself in 30 seconds."
+        ],
+        "images": [
+          "/projects/kiosk-interface/07-cart.png",
+          "/projects/kiosk-interface/08-payment.png",
+          "/projects/kiosk-interface/09-confirmation.png"
+        ],
+        "captions": [
+          "Cart with editable lines and a clear total",
+          "Pay here or at the counter",
+          "Confirmation with order number and wait time"
+        ],
+        "layout": "phones"
+      },
+      {
+        "title": "Outcome",
+        "text": [
+          "The result is a complete guest flow of nine key screens built from a small set of reusable parts: radio and checkbox options, tabs, quantity steppers, price tags, primary and secondary buttons and category cards. Because they repeat across screens, the kiosk feels consistent and is easier to build.",
+          "The design is ready to be tested on a real kiosk with first-time guests."
+        ]
+      },
+      {
+        "title": "Where it goes next",
+        "bullets": [
+          {
+            "title": "Test on a real kiosk",
+            "text": "Watch first-time guests order and measure time to order and where they hesitate, especially in customisation."
+          },
+          {
+            "title": "Accessibility mode",
+            "text": "A larger text option and a lower layout for wheelchair users and shorter guests."
+          },
+          {
+            "title": "Languages",
+            "text": "A language switch on the welcome screen for busy, multilingual locations."
+          },
+          {
+            "title": "Upsell moments",
+            "text": "Quiet suggestions in the cart (a drink with a burger) without slowing down checkout."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "mailmind",
+    "title": "MailMind",
+    "kind": "Product — AI email app",
+    "category": "products",
+    "size": "tall",
+    "variant": "card",
+    "order": 3,
+    "year": "2026",
+    "color": "#181818",
+    "ink": "#F2F2F2",
+    "tagline": "From 50 unread emails to inbox clear in about eight minutes.",
+    "summary": "MailMind turns the passive, chronological inbox into an AI-orchestrated workspace: a Morning Brief, an inbox sorted by intent, AI-drafted replies you approve with one tap, a calendar, a chat assistant and hands-free voice triage. The AI does the heavy lifting; you always pull the trigger.",
+    "role": "Lead UI/UX Designer",
+    "tools": [
+      "Figma",
+      "Prototyping"
+    ],
+    "liveUrl": null,
+    "image": "/projects/mailmind/cover.png",
+    "gallery": [
+      "/projects/mailmind/01-morning-brief.png",
+      "/projects/mailmind/02-inbox.png",
+      "/projects/mailmind/03-thread-detail.png",
+      "/projects/mailmind/04-ai-chat.png",
+      "/projects/mailmind/05-ai-drafts.png",
+      "/projects/mailmind/06-calendar.png",
+      "/projects/mailmind/07-voice.png",
+      "/projects/mailmind/08-design-system.png",
+      "/projects/mailmind/09-sitemap.png",
+      "/projects/mailmind/10-user-flow.png",
+      "/projects/mailmind/11-wireframes.png"
+    ],
+    "facts": [
+      {
+        "label": "Role",
+        "value": "Lead UI/UX Designer"
+      },
+      {
+        "label": "Product",
+        "value": "MailMind — AI-powered email app"
+      },
+      {
+        "label": "Platform",
+        "value": "Desktop web app, dark and light themes"
+      },
+      {
+        "label": "Duration",
+        "value": "5 days"
+      },
+      {
+        "label": "Focus",
+        "value": "IA, interaction design, prototyping"
+      },
+      {
+        "label": "Tools",
+        "value": "Figma"
+      }
+    ],
+    "stats": [
+      {
+        "value": "5",
+        "label": "core workspaces: Brief, Inbox, Drafts, Calendar, Voice"
+      },
+      {
+        "value": "~8 min",
+        "label": "designed path from app open to inbox clear"
+      },
+      {
+        "value": "70%",
+        "label": "target reduction in triage time"
+      }
+    ],
+    "flow": [
+      "Open app",
+      "Morning Brief",
+      "Intent segments",
+      "AI drafts",
+      "Approve",
+      "Inbox clear"
+    ],
+    "sections": [
+      {
+        "title": "Background",
+        "text": [
+          "MailMind is an AI-powered email application that treats the inbox as an active productivity hub instead of a passive list. I designed it end to end, from research and information architecture to a set of high-fidelity screens and an interactive prototype.",
+          "The central idea is simple: AI should do the sorting, summarising and first drafts, and a person should always make the final call."
+        ]
+      },
+      {
+        "title": "Challenge",
+        "text": [
+          "How might we help someone clear a flooded inbox in minutes, while making sure they trust what the AI is doing on their behalf?",
+          "Most email tools bolt AI onto the same chronological list. The challenge was to rethink how the inbox is organised and to make every AI action visible, explainable and reversible."
+        ]
+      },
+      {
+        "title": "The Problem",
+        "text": [
+          "Knowledge workers spend around 2.6 hours a day on email triage: reading, sorting and replying. Existing tools treat the inbox as a chronological dump, which keeps people in a reactive mode and mixes urgent client requests with newsletters.",
+          "Opening the inbox in the morning is the peak of the pain, and many people do not trust AI enough to let it send on their behalf."
+        ],
+        "bullets": [
+          {
+            "title": "For users",
+            "text": "Morning anxiety, important emails buried in noise, constant switching between email and calendar, and repetitive replies."
+          },
+          {
+            "title": "For trust",
+            "text": "Fear that an AI could send the wrong thing to a client, so full automation is a non-starter."
+          }
+        ]
+      },
+      {
+        "title": "Impact",
+        "text": [
+          "What the design is built to change, before it is tested with real users:"
+        ],
+        "bullets": [
+          {
+            "title": "Less morning anxiety",
+            "text": "A three-sentence Morning Brief replaces a wall of unread items."
+          },
+          {
+            "title": "Faster triage",
+            "text": "Emails are grouped by intent, so the user decides what to do instead of working out what each email is. The design targets up to 70% less triage time."
+          },
+          {
+            "title": "Trust by default",
+            "text": "Every AI action is labelled and needs an explicit Approve or Edit before anything is sent."
+          },
+          {
+            "title": "Fewer context switches",
+            "text": "Calendar, chat assistant and voice live inside the same workspace."
+          }
+        ]
+      },
+      {
+        "title": "Research Insights",
+        "text": [
+          "I combined contextual inquiry, a survey and a competitive review of Gmail, Superhuman, Spark, Shortwave and others. Four insights shaped the product, and each one turned into a design decision."
+        ],
+        "bullets": [
+          {
+            "title": "Morning anxiety is the peak pain",
+            "text": "Users dread opening the inbox at 9 AM and want a summary, not a list of 50 unread items. Design implication: a Morning Brief dashboard."
+          },
+          {
+            "title": "Distrust of full automation",
+            "text": "Users want AI to do the heavy lifting, but they must pull the trigger. Design implication: strict human-in-the-loop validation."
+          },
+          {
+            "title": "Triage, not reading, is the time sink",
+            "text": "Deciding what an email is takes more effort than reading it. Design implication: group by intent, not chronology."
+          },
+          {
+            "title": "Context-switching is costly",
+            "text": "Replying often means finding a past invoice or checking a calendar. Design implication: calendar and an AI chat assistant inside the workspace."
+          }
+        ]
+      },
+      {
+        "title": "Personas",
+        "text": [
+          "Two people anchored the decisions: one who needs speed, one who needs structure."
+        ],
+        "bullets": [
+          {
+            "title": "Sarah, the Startup Founder",
+            "text": "Runs a 15-person startup and dreads mornings. Wants the inbox under 20 items by noon, never to miss an investor email, and replies drafted in under 10 seconds."
+          },
+          {
+            "title": "Marcus, the Enterprise Manager",
+            "text": "Manages teams across three time zones and is CC'd on everything. Wants to delegate 40% of requests, see morning visibility into team comms, and track approvals without chasing."
+          }
+        ]
+      },
+      {
+        "title": "Design Process",
+        "text": [
+          "I worked in five days, so I kept the process tight and front-loaded the thinking."
+        ],
+        "bullets": [
+          {
+            "title": "1. Discover",
+            "text": "Contextual inquiry, survey and competitive analysis to find the real pain."
+          },
+          {
+            "title": "2. Define",
+            "text": "A problem statement and Jobs-to-be-Done across functional, emotional and social needs."
+          },
+          {
+            "title": "3. Structure",
+            "text": "Hub-and-spoke information architecture and two core user flows."
+          },
+          {
+            "title": "4. Wireframe",
+            "text": "Lo-fi layouts for the dashboard, inbox and thread detail."
+          },
+          {
+            "title": "5. Design",
+            "text": "Hi-fi screens, states and a dark and light design system in Figma."
+          },
+          {
+            "title": "6. Prototype and test next",
+            "text": "An interactive prototype now exists. Next is testing it with real users."
+          }
+        ]
+      },
+      {
+        "title": "Jobs To Be Done",
+        "text": [
+          "The problem statement: users need to triage a large inbox quickly and safely, but tools give them a passive list. I framed the needs as three kinds of jobs."
+        ],
+        "bullets": [
+          {
+            "title": "Functional",
+            "text": "Sort 200+ emails into actionable categories within two minutes of waking up, draft replies without re-reading the thread, and cross-reference the calendar instantly."
+          },
+          {
+            "title": "Emotional",
+            "text": "Feel in control of the overload, trust that nothing critical slips through, and end the day without inbox guilt."
+          },
+          {
+            "title": "Social",
+            "text": "Appear responsive and professional, delegate without seeming dismissive, and keep a reputation for thoughtful replies."
+          }
+        ]
+      },
+      {
+        "title": "Information Architecture",
+        "text": [
+          "MailMind departs from the flat inbox. It uses a hub-and-spoke model where the Morning Brief is the central hub, with specialised workspaces around it: Inbox, AI Drafts, Calendar and Compose, and Settings.",
+          "Content follows three tiers with progressive disclosure: the Brief as executive summary, then intent categories, then the full thread. The AI Chat Panel, Voice Mode and notifications cut across every screen."
+        ],
+        "images": [
+          "/projects/mailmind/09-sitemap.png"
+        ],
+        "captions": [
+          "Sitemap: Morning Brief as the hub, with an adaptive sidebar and persistent AI chat"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "User Flow Mapping",
+        "text": [
+          "I mapped two journeys before drawing a screen. The primary flow is Morning Triage: open the app, read the three-sentence brief, work through intent segments, review AI drafts and reach inbox clear in about eight minutes.",
+          "The secondary flow is commute triage by voice: activate voice, listen to the brief, speak commands such as \"reply\" or \"approve\", and confirm through the same human-in-the-loop check."
+        ],
+        "images": [
+          "/projects/mailmind/10-user-flow.png"
+        ],
+        "captions": [
+          "Morning triage and voice-driven commute triage"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Lo-fi Wireframes",
+        "text": [
+          "I wireframed the three screens that carry the most weight: the dashboard, the inbox and the thread detail. Settling hierarchy in grayscale first meant colour and the AI accent could then be used purely for meaning."
+        ],
+        "images": [
+          "/projects/mailmind/11-wireframes.png"
+        ],
+        "captions": [
+          "Dashboard, inbox view and thread detail wireframes"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Key Design Decisions",
+        "bullets": [
+          {
+            "title": "Human in the loop, always",
+            "text": "An \"AI suggests:\" intent label sits on every AI action, and nothing is sent without Approve or Edit. This is the main trust mechanism."
+          },
+          {
+            "title": "Group by intent, not time",
+            "text": "High Priority, General and Bulletins replace a single chronological list."
+          },
+          {
+            "title": "Summary before detail",
+            "text": "The Morning Brief gives three sentences and urgency groups before any email is opened."
+          },
+          {
+            "title": "One workspace, no tab hopping",
+            "text": "Calendar, compose and an AI chat panel stay beside the email, so context is never lost."
+          },
+          {
+            "title": "Hands-free when needed",
+            "text": "Voice Mode is a distraction-free overlay for triage during commutes."
+          },
+          {
+            "title": "Quiet notifications",
+            "text": "Alerts are grouped by urgency and non-urgent ones are silenced to protect deep work."
+          }
+        ]
+      },
+      {
+        "title": "Hi-Fi Design: Starting the day",
+        "text": [
+          "The Morning Brief is the front door. A scannable widget gives a three-sentence summary of overnight activity, groups items by urgency and cross-references the calendar, so the first thing a user sees is a plan instead of a pile.",
+          "From there the inbox is segmented by intent: High Priority as assessed by AI, General threads and automated Bulletins. Opening a thread shows the full context with an AI-drafted reply ready to edit."
+        ],
+        "images": [
+          "/projects/mailmind/01-morning-brief.png",
+          "/projects/mailmind/02-inbox.png",
+          "/projects/mailmind/03-thread-detail.png"
+        ],
+        "captions": [
+          "Morning Brief: summary, urgency groups, calendar cross-reference",
+          "Intent-segmented inbox",
+          "Thread detail with an AI-drafted reply"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Hi-Fi Design: Getting things done",
+        "text": [
+          "The AI Drafts Queue is a horizontal card deck of generated replies. Each card carries an explicit intent label and a single-tap Approve, with Edit and Reject always in reach, and a toast confirms what just happened.",
+          "The AI Chat Panel handles the questions that normally mean several tabs and searches. A user can ask for something like \"find the invoice draft\" and get the answer without leaving the thread."
+        ],
+        "images": [
+          "/projects/mailmind/05-ai-drafts.png",
+          "/projects/mailmind/04-ai-chat.png"
+        ],
+        "captions": [
+          "AI Drafts Queue: intent-labelled cards with Approve, Edit and Reject",
+          "AI Chat Panel for cross-referencing past context"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Hi-Fi Design: Scheduling and voice",
+        "text": [
+          "Calendar and Compose is a synchronised split-screen. Dragging an email onto a slot schedules it and fills in a smart reply that confirms the time, so scheduling no longer means switching apps.",
+          "Voice Mode is an immersive, distraction-free overlay for hands-free triage. The assistant reads the brief aloud, accepts commands such as reply or approve, and still asks for confirmation before anything is sent."
+        ],
+        "images": [
+          "/projects/mailmind/06-calendar.png",
+          "/projects/mailmind/07-voice.png"
+        ],
+        "captions": [
+          "Calendar and Compose: drag an email to schedule it",
+          "Voice Mode for hands-free triage"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Design System: Calm Command",
+        "text": [
+          "The interface follows a dark-first system I called Calm Command. Neutral surfaces keep the screen quiet, and a purple gradient is reserved for AI, so anything AI-generated is recognisable at a glance. Type pairs Neue Haas Grotesk with Inter, icons use Phosphor, and colours and spacing are tokens so dark and light themes stay in sync."
+        ],
+        "images": [
+          "/projects/mailmind/08-design-system.png"
+        ],
+        "captions": [
+          "Colour primitives, components and icons"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Outcome",
+        "text": [
+          "The result is a complete product concept: a researched problem, a hub-and-spoke architecture, five connected workspaces, a reusable design system and an interactive prototype of the full flow.",
+          "The design is ready to be tested with real users, starting with how much they trust the AI drafts and how quickly they reach inbox clear."
+        ]
+      },
+      {
+        "title": "Where it goes next",
+        "bullets": [
+          {
+            "title": "Usability testing",
+            "text": "Time the morning triage flow with first-time users and measure the real reduction against the 70% target."
+          },
+          {
+            "title": "Trust calibration",
+            "text": "Test how much explanation the \"AI suggests:\" label needs before people approve without re-reading."
+          },
+          {
+            "title": "Delegation workflows",
+            "text": "Serve Marcus's need to hand requests to teammates and track approvals."
+          },
+          {
+            "title": "Accessibility",
+            "text": "Audit contrast across both themes and add a full keyboard path for Voice Mode actions."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "merchant-app",
+    "title": "OneHubPOS Merchant App",
+    "kind": "Product — AI merchant app",
+    "category": "products",
+    "size": "wide",
+    "variant": "card",
+    "order": 4,
+    "year": "2026",
+    "color": "#202020",
+    "ink": "#F2F2F2",
+    "tagline": "Run every store from your phone, by simply asking.",
+    "summary": "A conversational, mobile-first POS companion for OneHubPOS merchants. It brings multi-store management, live sales numbers and AI-guided menu tasks into one clean app, so a restaurant owner can add an item, change a tax rule or disable a dish in a few taps instead of a desktop form.",
+    "role": "UI/UX Designer",
+    "tools": [
+      "Figma"
+    ],
+    "liveUrl": null,
+    "image": "/projects/merchant-app/cover.png",
+    "gallery": [
+      "/projects/merchant-app/01-onboarding.png",
+      "/projects/merchant-app/02-login-pin.png",
+      "/projects/merchant-app/03-ai-add-item.png",
+      "/projects/merchant-app/03-store selection.png",
+      "/projects/merchant-app/04-ai-quick-actions.png",
+      "/projects/merchant-app/05-visual-language.png",
+      "/projects/merchant-app/06-ai-assistant-home.png",
+      "/projects/merchant-app/06-ai-in-hand.jpg",
+      "/projects/merchant-app/07-app-icon.jpg"
+    ],
+    "facts": [
+      {
+        "label": "Role",
+        "value": "UI/UX Designer"
+      },
+      {
+        "label": "Product",
+        "value": "OneHubPOS — merchant management app"
+      },
+      {
+        "label": "Platform",
+        "value": "Mobile app (iOS-style)"
+      },
+      {
+        "label": "Industry",
+        "value": "Restaurant tech · SaaS"
+      },
+      {
+        "label": "Duration",
+        "value": "8 weeks"
+      },
+      {
+        "label": "Tools",
+        "value": "Figma"
+      }
+    ],
+    "stats": [
+      {
+        "value": "~60%",
+        "label": "fewer task steps with AI-guided flows"
+      },
+      {
+        "value": "7",
+        "label": "guided steps to add a menu item by chat"
+      },
+      {
+        "value": "4",
+        "label": "core tabs: Home, AI Assistant, Support, Profile"
+      }
+    ],
+    "flow": [
+      "Onboarding",
+      "Sign in",
+      "Set PIN",
+      "Select store",
+      "Ask the AI",
+      "Confirm",
+      "Undo if needed"
+    ],
+    "sections": [
+      {
+        "title": "Background",
+        "text": [
+          "OneHubPOS is a point-of-sale system for restaurants. Merchants already run their stores on it, but most of the work still happens on a desktop, behind a counter, in dense screens made for staff who sit down to use them.",
+          "This project reimagines merchant operations as a clean, AI-guided mobile experience. I designed the app end to end over eight weeks: from the first briefing and competitor research to a clickable prototype and handoff assets."
+        ]
+      },
+      {
+        "title": "Challenge",
+        "text": [
+          "How might we let a busy restaurant owner manage several stores from their phone, and finish routine tasks without hunting through menus or filling in long forms?",
+          "Restaurant merchants handle dozens of operational tasks every day. A mobile app has to make those tasks feel lighter than the desktop version, not just smaller."
+        ]
+      },
+      {
+        "title": "The Problem",
+        "text": [
+          "Most existing POS systems are cluttered, desktop-first and need too many manual steps. Data sits in silos, updates are slow, and an owner with more than one store has no single place to see how things are going."
+        ],
+        "bullets": [
+          {
+            "title": "What was broken",
+            "text": "Overloaded and cluttered screens, manual steps, desktop-only access, siloed data, slow updates, no visibility across stores and confusing navigation."
+          },
+          {
+            "title": "What it needed to become",
+            "text": "AI-powered, mobile-first, with a unified view, smart alerts, conversational tasks, fast onboarding, real-time sync, a focused dashboard and multi-store support."
+          }
+        ]
+      },
+      {
+        "title": "Impact",
+        "text": [
+          "What the design delivers, from the outcomes I set out to reach:"
+        ],
+        "bullets": [
+          {
+            "title": "Faster workflows",
+            "text": "AI-guided flows replace multi-step forms, cutting roughly 60% of the steps in common tasks."
+          },
+          {
+            "title": "Mobile-first clarity",
+            "text": "Thumb-zone actions and a bottom tab bar keep the most used controls within easy reach."
+          },
+          {
+            "title": "AI automation",
+            "text": "A conversational assistant handles item creation, menu upload, tax changes and availability."
+          },
+          {
+            "title": "Multi-store ready",
+            "text": "Branch cards with inline KPIs and open or closed status give owners one view of every location."
+          }
+        ]
+      },
+      {
+        "title": "Design Process",
+        "text": [
+          "I worked in four stages across the eight weeks, moving from understanding the client's goals to a prototype that could be handed to engineers and shown to investors."
+        ],
+        "bullets": [
+          {
+            "title": "1. Discovery",
+            "text": "Client briefing, MVP goals definition and competitor research."
+          },
+          {
+            "title": "2. UX Design",
+            "text": "App flow, wireframes and user testing."
+          },
+          {
+            "title": "3. UI Design",
+            "text": "Moodboard, concept design, layouts, responsive designs and the design system."
+          },
+          {
+            "title": "4. Handoff",
+            "text": "A clickable prototype, design handoff and investor presentation assets."
+          }
+        ]
+      },
+      {
+        "title": "Key Design Decisions",
+        "bullets": [
+          {
+            "title": "Ask, don't navigate",
+            "text": "The AI Assistant sits in the main tab bar, greets the merchant with recommended actions (Add New Item, Upload New Menu Item, Disable Items, Change Tax Configuration, Update Price, Day End Report) and also accepts free text and voice."
+          },
+          {
+            "title": "Turn long forms into short conversations",
+            "text": "Adding an item is seven small steps in a chat, each with a progress bar, so the merchant answers one question at a time instead of facing a form."
+          },
+          {
+            "title": "Let the AI suggest, the merchant decide",
+            "text": "When setting a price, the assistant offers a suggestion based on similar items with a Use button. The merchant can ignore it."
+          },
+          {
+            "title": "Review before it counts, undo after",
+            "text": "Every guided task ends in a preview card with Edit and Confirm, and a success message with Undo, so mistakes are cheap."
+          },
+          {
+            "title": "A card hierarchy built for glancing",
+            "text": "Each store is a card with gross sales, taxes, total orders and the day's change, plus an Open or Closed badge, so the state of the business reads in seconds."
+          },
+          {
+            "title": "Secure without friction",
+            "text": "A four-digit PIN and an optional biometric prompt replace repeated password entry, and a clear confirmation closes the password reset."
+          }
+        ]
+      },
+      {
+        "title": "Hi-Fi Design: Getting in",
+        "text": [
+          "The app opens with a short onboarding that says what the product does in four screens: Welcome, Track Everything, Easy Payments and Manage Your Team. Each has one illustration, one line of copy, a Next button and a Skip for people who already know what they want.",
+          "Sign in is a plain email and password screen with a Forgot password link and a Contact Sales route for new merchants. After that the merchant sets a PIN on a large numpad, with an inline field that fills as they type, and is offered biometric access through a bottom sheet with a Maybe later option. Resetting a password ends on a clear success state with a single Back to Login action."
+        ],
+        "showMerchantOnboarding": true,
+        "onboardingCaption": "Splash and onboarding: four screens, always skippable",
+        "images": [
+          "/projects/merchant-app/02-login-pin.png"
+        ],
+        "captions": [
+          "Sign in, PIN setup, biometrics and password reset"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Hi-Fi Design: Seeing every store",
+        "text": [
+          "The home screen starts with Select Store. A date picker sits at the top, tabs separate Restaurant (7) from Retail (3), and each branch is a card with gross sales, taxes, total orders and a +12.5% today indicator. A green Open or red Closed badge tells the merchant at once which stores are trading.",
+          "Bold numbers, soft cards and one blue accent keep the dashboard calm even with many branches on it."
+        ],
+        "images": [
+          "/projects/merchant-app/03-store selection.png"
+        ],
+        "captions": [
+          "The multi-store Select Store dashboard"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Hi-Fi Design: The AI Assistant",
+        "text": [
+          "The assistant opens with \"Hi! How can I help you today?\" and six recommended actions, so a merchant never faces a blank chat. A message box with an attach button and a mic sits above the tab bar, and quick-action chips stay visible during a conversation.",
+          "Adding a menu item shows how the pattern works. The assistant says \"Let's add a new item, I'll guide you through each step\" and asks for the name, then the item group (with tappable categories and a Create new category option), then the price with an AI suggestion. Completed answers collapse into a checklist above, so the merchant always sees what they have already given. Step seven is a preview with name, category, price, availability, tax and inventory, then Edit or Confirm. Once created, a toast confirms it and offers Undo."
+        ],
+        "images": [
+          "/projects/merchant-app/06-ai-assistant-home.png",
+          "/projects/merchant-app/03-ai-add-item.png"
+        ],
+        "captions": [
+          "The assistant's home with recommended actions",
+          "Add New Item: seven guided steps from name to confirmation"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Hi-Fi Design: More things to ask",
+        "text": [
+          "The same chat pattern covers the other everyday jobs. Upload menu item lets the merchant upload a photo of a menu item so the assistant can extract the details automatically, for review and confirmation. Change tax rule finds the item, shows its current rule and lets the merchant choose a new one. Disable item searches for the item and offers per-channel switches, so a dish can be turned off for Dine-in, delivery or online ordering independently."
+        ],
+        "images": [
+          "/projects/merchant-app/04-ai-quick-actions.png"
+        ],
+        "captions": [
+          "Upload menu item, change tax rule and disable item flows"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Visual Language",
+        "text": [
+          "A bold, legible type pairing and a high-contrast palette, tuned for glancing at a phone in a busy kitchen or dining room. Manrope in four weights (Regular, Medium, SemiBold, Bold) carries everything. A confident blue (#004FFF) is the primary colour, supported by orange (#F79009), pink (#FA6682), cyan (#3ED7F4) and mint (#65EDB1) for charts, status and illustration accents."
+        ],
+        "images": [
+          "/projects/merchant-app/05-visual-language.png"
+        ],
+        "captions": [
+          "Manrope and the colour palette"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Challenges and how I solved them",
+        "bullets": [
+          {
+            "title": "Overloaded dashboards",
+            "text": "A modular card hierarchy with bold metric type and scannable layouts."
+          },
+          {
+            "title": "Poor mobile UX",
+            "text": "Mobile-first screens with thumb-zone-optimised actions."
+          },
+          {
+            "title": "Manual processes",
+            "text": "AI-guided conversational flows that replace multi-step forms."
+          },
+          {
+            "title": "Multi-store complexity",
+            "text": "Unified branch cards with inline KPIs and status badges."
+          }
+        ]
+      },
+      {
+        "title": "Outcome",
+        "text": [
+          "The result is a complete mobile app for OneHubPOS merchants: a short onboarding, secure sign-in, a multi-store dashboard and an AI Assistant that handles the most common menu and tax tasks through conversation. It is delivered as a design system, a clickable prototype, a handoff and presentation assets for investors.",
+          "Together they give the merchant faster workflows, mobile-first clarity, AI automation and a single view across every store."
+        ],
+        "images": [
+          "/projects/merchant-app/onehubpos-smooth-device.mp4"
+        ],
+        "captions": [
+          "OneHubPOS Merchant App prototype walkthrough"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Where it goes next",
+        "bullets": [
+          {
+            "title": "Test with merchants",
+            "text": "Watch owners complete the add-item and tax-change flows, and measure the real step and time savings."
+          },
+          {
+            "title": "Smart alerts",
+            "text": "Quiet, useful notifications when a store closes unexpectedly or sales drop."
+          },
+          {
+            "title": "More assistant skills",
+            "text": "Price updates and the day-end report, already shown as recommended actions, taken all the way through."
+          },
+          {
+            "title": "Accessibility",
+            "text": "Larger text support and contrast checks across the full palette."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "staff-login-clock-in",
+    "title": "Staff Login, Clock In/Out",
+    "kind": "Product — POS staff terminal",
+    "category": "products",
+    "size": "wide",
+    "variant": "card",
+    "order": 5,
+    "year": "2026",
+    "color": "#1a1a1a",
+    "ink": "#F2F2F2",
+    "tagline": "From a 4-digit PIN to a submitted timesheet, all inside the POS.",
+    "summary": "A seamless staff experience for a restaurant point-of-sale terminal: PIN sign-in on a shared device, one-tap clock in, break tracking with a clear allowance, a live timesheet and a shift summary, all in the same screen staff use to take orders.",
+    "role": "UI/UX Designer",
+    "tools": [
+      "Figma"
+    ],
+    "liveUrl": null,
+    "image": "/projects/staff-login-clock-in/cover.png",
+    "gallery": [
+      "/projects/staff-login-clock-in/01-pin-and-welcome.png",
+      "/projects/staff-login-clock-in/02-pre-shift-and-active.png",
+      "/projects/staff-login-clock-in/03-break-and-complete.png",
+      "/projects/staff-login-clock-in/04-order-screen.png"
+    ],
+    "facts": [
+      {
+        "label": "Role",
+        "value": "UI/UX Designer"
+      },
+      {
+        "label": "Product",
+        "value": "OneHubPOS — staff terminal"
+      },
+      {
+        "label": "Client",
+        "value": "Mylapore Express (restaurant)"
+      },
+      {
+        "label": "Platform",
+        "value": "Tablet POS terminal, shared by multiple staff"
+      },
+      {
+        "label": "Scope",
+        "value": "PIN login, clock in/out, breaks, timesheet, shift summary"
+      },
+      {
+        "label": "Tools",
+        "value": "Figma"
+      }
+    ],
+    "stats": [
+      {
+        "value": "<3s",
+        "label": "average login time with a PIN"
+      },
+      {
+        "value": "0",
+        "label": "forgotten clock-ins in user testing"
+      },
+      {
+        "value": "8",
+        "label": "participants tested, across two restaurants"
+      },
+      {
+        "value": "6",
+        "label": "steps in a staff shift, from arrival to clock out"
+      }
+    ],
+    "flow": [
+      "Arrive & authenticate",
+      "Welcome screen",
+      "Clock in",
+      "Take orders",
+      "Break",
+      "Clock out"
+    ],
+    "sections": [
+      {
+        "title": "Background",
+        "text": [
+          "Mylapore Express runs its restaurant on OneHubPOS. Staff share one terminal at the counter, and each person needs to identify themselves, log their hours and take orders on it, often in the middle of a rush.",
+          "I designed the staff side of the terminal: how people sign in, start and end shifts, take breaks and see their own hours, so that time tracking becomes part of the way they already use the POS, not a separate chore."
+        ]
+      },
+      {
+        "title": "Challenge",
+        "text": [
+          "How might we give every staff member secure, personal access to a shared POS terminal, while keeping sign-in and time tracking fast enough to disappear into the shift?",
+          "Mylapore Express needed a unified terminal that staff could operate with minimal training, handling personal authentication, shift tracking, break management and order processing from a single touchpoint. The key tension was security without friction, and rich data without cognitive overload."
+        ]
+      },
+      {
+        "title": "The Problem",
+        "text": [
+          "Legacy POS systems made staff work around the tool. Passwords slowed every handoff, clocking in was easy to forget, and nobody could see their own hours until payday."
+        ],
+        "bullets": [
+          {
+            "title": "For staff",
+            "text": "No visibility into their hours or break allowance, and slow logins at shift change."
+          },
+          {
+            "title": "For managers",
+            "text": "Payroll disputes and manual corrections caused by missed clock-ins, and break rules they had to police."
+          }
+        ]
+      },
+      {
+        "title": "Impact",
+        "text": [
+          "Usability testing with 8 participants across two restaurant locations showed measurable improvements over the legacy system:"
+        ],
+        "bullets": [
+          {
+            "title": "Faster sign-in",
+            "text": "Average login time with a PIN was under three seconds, against the 30 to 60 seconds that password logins added to every shift change."
+          },
+          {
+            "title": "No forgotten clock-ins",
+            "text": "Zero forgotten clock-ins during user testing, because the Clock In action sits on the first screen after login."
+          },
+          {
+            "title": "Clear, trusted hours",
+            "text": "Staff can see worked time, break allowance and weekly total at any moment instead of waiting for a payslip."
+          }
+        ]
+      },
+      {
+        "title": "Research Insights",
+        "text": [
+          "I ran contextual interviews with front-of-house and back-office staff. They surfaced four recurring pain points with legacy POS systems, and each one shaped a part of the design."
+        ],
+        "bullets": [
+          {
+            "title": "Forgotten clock-ins",
+            "text": "Staff frequently started shifts without clocking in, leading to payroll disputes and manual corrections by managers. The response: a Clock In offer on the welcome screen and a persistent clock in and out button."
+          },
+          {
+            "title": "Slow handoffs",
+            "text": "Password-based logins added 30 to 60 seconds to every shift change, a real bottleneck at peak service. The response: a four-digit PIN pad."
+          },
+          {
+            "title": "Opaque timesheets",
+            "text": "Staff had no visibility into their own hours or break allowances until payslips arrived, and this eroded trust. The response: a live timesheet with worked time, break time and weekly total."
+          },
+          {
+            "title": "Ambiguous break rules",
+            "text": "Break allowances varied by role and shift length. Staff guessed and managers policed. The response: an allowance counter (for example 0m of 30m) and an over-allowance note on the summary."
+          }
+        ]
+      },
+      {
+        "title": "Design Process",
+        "text": [
+          "I followed the staff through one full shift, then designed the screens around the moments that mattered most."
+        ],
+        "bullets": [
+          {
+            "title": "1. Listen",
+            "text": "Contextual interviews with front-of-house and back-office staff."
+          },
+          {
+            "title": "2. Map the journey",
+            "text": "Lay out a single shift end to end to find friction and opportunity."
+          },
+          {
+            "title": "3. Design",
+            "text": "Build purpose-made screens: minimal during service, detailed when context calls for it."
+          },
+          {
+            "title": "4. Test",
+            "text": "Usability testing with 8 participants across two restaurant locations, compared against the legacy system."
+          }
+        ]
+      },
+      {
+        "title": "User Flow Mapping",
+        "text": [
+          "I mapped the complete staff journey across a single shift to identify moments of friction and opportunity. It has six steps: arrive and authenticate with a 4-digit PIN on a shared terminal, a personalised welcome screen with quick actions, a one-tap clock in that starts the shift timer immediately, order taking, breaks that pause the shift with a visible timer and notify the manager, and a clock out that shows a shift summary, flags overtime and submits the timesheet."
+        ]
+      },
+      {
+        "title": "Key Design Decisions",
+        "bullets": [
+          {
+            "title": "A PIN, not a password",
+            "text": "A large numpad and four-digit PIN make signing in on a shared terminal take seconds. Forgot PIN is one tap away, and a Clear key sits beside the digits."
+          },
+          {
+            "title": "A welcome that does the next job",
+            "text": "After login the person sees a personalised greeting and two choices: Open POS or Clock in for shift, with a quiet note if they have not clocked in today."
+          },
+          {
+            "title": "One persistent action",
+            "text": "The big button at the bottom left changes with the state of the shift: green Clock In, red Clock Out, blue Start new shift. The state is visible without reading."
+          },
+          {
+            "title": "Hours that are always visible",
+            "text": "Four summary tiles show scheduled time, worked today, break allowance remaining and the week so far, so staff always know where they stand."
+          },
+          {
+            "title": "Breaks without guesswork",
+            "text": "A modal shows a running break timer and when it started, with a single Resume shift button and a note that the manager will be notified."
+          },
+          {
+            "title": "A summary that closes the loop",
+            "text": "At clock out a banner confirms the shift, with total time, break used, overtime and a note on whether it was approved automatically or submitted for approval."
+          },
+          {
+            "title": "Context kept in view",
+            "text": "The login screen shows the terminal, store and build version in the footer, so a shared device is always identifiable."
+          }
+        ]
+      },
+      {
+        "title": "Hi-Fi Design: Getting in",
+        "text": [
+          "The login screen puts a time-of-day greeting and a large clock on the left and a PIN pad on the right, with the dots filling as digits are entered. Once the PIN is accepted, the welcome screen says \"Welcome back, John\", shows the role, and offers Open POS (take orders and process payments) or Clock in for shift (you haven't clocked in today), with Sign out underneath."
+        ],
+        "images": [
+          "/projects/staff-login-clock-in/01-pin-and-welcome.png"
+        ],
+        "captions": [
+          "PIN sign-in and the personalised welcome screen"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Hi-Fi Design: Starting a shift",
+        "text": [
+          "The timesheet is a calm, two-panel screen. On the left sit the date, the person, their off-shift status, last clock-in, weekly hours and the main action. On the right are four summary tiles and a table of recent shifts with date, role, clock in, clock out, break and hours. Before a shift the table shows a friendly empty state: \"No shifts today yet. Tap Clock in on the left to start your shift.\"",
+          "Once the person clocks in, the same screen updates in place: the status changes to on shift, the worked time starts counting, the estimated clock-out time appears and the button turns red. Today, This week and All tabs let staff check their history, and an export button sits at the top right."
+        ],
+        "images": [
+          "/projects/staff-login-clock-in/02-pre-shift-and-active.png"
+        ],
+        "captions": [
+          "Before the shift, and the same screen once the shift is active"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Hi-Fi Design: Break and clock out",
+        "text": [
+          "Tapping Break dims the screen behind a focused modal with the break timer, the start time and a single Resume shift action, so the break is clear and hard to leave running by accident.",
+          "At clock out, a success banner summarises the shift and the tiles update to show total time, break against allowance (45m of 30m, flagged as 15 minutes over), overtime, and the weekly total, with a note that the overtime was approved automatically. The side panel keeps the day's totals, and the main action becomes Start new shift."
+        ],
+        "images": [
+          "/projects/staff-login-clock-in/03-break-and-complete.png"
+        ],
+        "captions": [
+          "Break modal, and the shift-complete summary"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Hi-Fi Design: Straight into orders",
+        "text": [
+          "Open POS takes the staff member directly into order entry on the same terminal: product groups across the top, items with tags such as Customizable, Spicy and stock left, the current order on the right with subtotal, tax and total, and a single Charge button."
+        ],
+        "images": [
+          "/projects/staff-login-clock-in/04-order-screen.png"
+        ],
+        "captions": [
+          "Order entry after sign-in"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Outcome",
+        "text": [
+          "The staff experience now runs as one connected flow, from arriving at the terminal to submitting a timesheet. In usability testing with 8 participants across two locations, login took under three seconds on average and there were no forgotten clock-ins.",
+          "Screens are purpose-built for their moment: minimal during high-pressure service and detailed when context calls for it."
+        ]
+      },
+      {
+        "title": "Where it goes next",
+        "bullets": [
+          {
+            "title": "Test over a longer period",
+            "text": "Eight participants shows promise, but a full payroll cycle would show whether missed clock-ins and corrections really drop."
+          },
+          {
+            "title": "Manager view",
+            "text": "Approvals, overtime review and break notifications for the person on the other end of the timesheet."
+          },
+          {
+            "title": "PIN safety",
+            "text": "Lockout and recovery rules for repeated wrong PINs on a shared device."
+          },
+          {
+            "title": "Accessibility",
+            "text": "Check contrast on the status text and add larger touch targets for the busiest screens."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "table-mpos",
+    "title": "Table mPOS System",
+    "kind": "Product — Mobile POS for dine-in",
+    "category": "products",
+    "size": "tall",
+    "variant": "card",
+    "order": 6,
+    "year": "2026",
+    "color": "#1e1e1e",
+    "ink": "#F2F2F2",
+    "tagline": "Take the order at the table. Never miss a KOT.",
+    "summary": "A mobile point-of-sale platform redesigned from the ground up — faster ordering, smarter table management, and zero missed KOTs.",
+    "role": "UI/UX Designer",
+    "tools": [
+      "Figma",
+      "Photoshop"
+    ],
+    "liveUrl": "https://www.behance.net/gallery/249920635/TablePOS-mPOS-System",
+    "image": "/projects/table-mpos/cover.jpg",
+    "gallery": [
+      "/projects/table-mpos/10-grid-system.jpg",
+      "/projects/table-mpos/11-wireframes.jpg",
+      "/projects/table-mpos/12-final-tables.jpg",
+      "/projects/table-mpos/13-final-menu-order.jpg",
+      "/projects/table-mpos/14-final-checkout-split.jpg",
+      "/projects/table-mpos/15-final-payment.jpg"
+    ],
+    "facts": [
+      {
+        "label": "Role",
+        "value": "UI/UX Designer"
+      },
+      {
+        "label": "Product",
+        "value": "TablePOS — handheld mPOS for dine-in"
+      },
+      {
+        "label": "Timeline",
+        "value": "16 Weeks (Discover to Deliver)"
+      },
+      {
+        "label": "Grid",
+        "value": "375 px · 4 Cols · 12 Gutter · 16 Margin"
+      },
+      {
+        "label": "Scope",
+        "value": "Table Management, KOT Workflow, Split Bill & Payments"
+      },
+      {
+        "label": "Tools",
+        "value": "Figma, Photoshop"
+      }
+    ],
+    "stats": [
+      {
+        "value": "16 wks",
+        "label": "end-to-end design process from discovery to handoff"
+      },
+      {
+        "value": "< 30s",
+        "label": "target time to complete a table order"
+      },
+      {
+        "value": "3",
+        "label": "payment methods in one checkout: Card, Cash, UPI"
+      }
+    ],
+    "flow": [
+      "Pick a table",
+      "Filter & guest count",
+      "Menu & modifiers",
+      "Send KOT",
+      "Multi-KOT checkout",
+      "Split bill",
+      "Pay & print"
+    ],
+    "sections": [
+      {
+        "title": "Overview",
+        "text": [
+          "A mobile point-of-sale platform redesigned from the ground up for dine-in service — faster ordering, smarter table management, and zero missed KOTs."
+        ],
+        "bullets": [
+          {
+            "title": "Table Management",
+            "text": "A visual floor plan with live status: Available, Occupied, and Payment pending. Staff can merge and move tables in seconds."
+          },
+          {
+            "title": "KOT Workflow",
+            "text": "Multi-KOT ordering with time-locked editing, modifier cascades, and real-time kitchen sync. Never miss an item."
+          },
+          {
+            "title": "Split Bill & Payments",
+            "text": "Card, Cash, and UPI payments, with an equal split across guests. Each share is collected separately. Item-wise split is in progress."
+          }
+        ]
+      },
+      {
+        "title": "The Problem",
+        "text": [
+          "Traditional POS systems slowed down service and created operational inefficiencies."
+        ],
+        "bullets": [
+          {
+            "title": "Walking away from guests",
+            "text": "Servers left guests to walk to a fixed POS terminal to enter orders."
+          },
+          {
+            "title": "Long waits at peak hours",
+            "text": "Long wait times during peak hours reduced customer satisfaction."
+          },
+          {
+            "title": "Manual bill splitting",
+            "text": "Manual bill splitting caused delays and payment disputes."
+          },
+          {
+            "title": "Counter payment friction",
+            "text": "Payment processing at the counter created unnecessary customer friction."
+          }
+        ]
+      },
+      {
+        "title": "The Solution",
+        "text": [
+          "A mobile POS (mPOS) platform enabling end-to-end table-side operations."
+        ],
+        "bullets": [
+          {
+            "title": "Table-side order taking",
+            "text": "Table-side order taking, with modifiers and customisation."
+          },
+          {
+            "title": "Kitchen sync as KOTs",
+            "text": "Orders sync to the kitchen display and printers as KOTs."
+          },
+          {
+            "title": "Real-time table tracking",
+            "text": "Real-time table status and order tracking."
+          },
+          {
+            "title": "Flexible bill splitting",
+            "text": "Bill splitting by guest or by item, with card, cash, or UPI payment."
+          }
+        ]
+      },
+      {
+        "title": "Design Process (16 Weeks)",
+        "text": [
+          "Structured across four phases over 16 weeks, from floor discovery to usability testing and developer handoff."
+        ],
+        "bullets": [
+          {
+            "title": "Week 1–3 · Discover",
+            "text": "Stakeholder Interviews, Server & Manager Interviews, and Competitive Analysis."
+          },
+          {
+            "title": "Week 4–5 · Define",
+            "text": "Problem Statements, Personas, and Success Metrics."
+          },
+          {
+            "title": "Week 6–12 · Develop",
+            "text": "User Flows, Wireframes, and Hi-Fi UI Screens."
+          },
+          {
+            "title": "Week 13–16 · Deliver",
+            "text": "Interactive Prototype, Usability Testing, and QA & Dev Handoff."
+          }
+        ]
+      },
+      {
+        "title": "What the Discovery Changed",
+        "text": [
+          "The manager interviews shaped the table-status features. Floor managers needed to find which server owned which tables, and to see at a glance which tables were free, occupied, or waiting for payment.",
+          "The server interviews made the case for table-side ordering and a short cancel window before an order reached the kitchen."
+        ]
+      },
+      {
+        "title": "Persona",
+        "text": [
+          "Arjun Kumar (28, Bangalore, IND) is a Head Waiter and dine-in specialist with 5 years of experience. Arjun manages six to eight tables during peak hours. He needs an ordering system that is fast and reliable, so he can take orders at the table without interrupting guests."
+        ],
+        "bullets": [
+          {
+            "title": "Motivations",
+            "text": "Faster service, better guest experience, higher table turnover, and reduced order errors."
+          },
+          {
+            "title": "Goals",
+            "text": "Complete table orders in under 30 seconds, send orders instantly to the kitchen, manage modifiers without errors, and split bills quickly and accurately."
+          },
+          {
+            "title": "Pain Points",
+            "text": "Walking to a fixed POS terminal, re-entering orders after the app crashes, manual bill splitting in the middle of a busy service, and queues at the counter during peak hours."
+          }
+        ]
+      },
+      {
+        "title": "Grid System",
+        "text": [
+          "Built on a 375 px handheld artboard with a 4-column layout (12 px gutter, 16 px margin) so tap targets, item rows, and sticky checkout bars stay comfortable for one-handed use on the ATVA mPOS terminal."
+        ],
+        "images": [
+          "/projects/table-mpos/10-grid-system.jpg"
+        ],
+        "captions": [
+          "ATVA handheld mPOS terminal and 375 px 4-column grid specification"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Wireframe",
+        "text": [
+          "Ten low-fidelity grayscale wireframes mapping the core flows — table grid, menu and search, filter sheet, guest setup, table actions, and checkout quantity steppers — before applying visual hierarchy."
+        ],
+        "images": [
+          "/projects/table-mpos/11-wireframes.jpg"
+        ],
+        "captions": [
+          "Low-fidelity wireframes across table management, menu, filters, and checkout"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Hi-Fi Design: Table Management",
+        "text": [
+          "Dine-in is the default view. Status is colour-coded: green for available, red for occupied, and orange for payment pending. Staff can filter by status, floor, minimum capacity, and assigned server, and search by server name to see which tables they cover."
+        ],
+        "images": [
+          "/projects/table-mpos/12-final-tables.jpg"
+        ],
+        "captions": [
+          "The table grid, filter sheet, and table details. Tapping an available table asks only for the guest count. The logged-in server is assigned automatically, and customer name and number are optional."
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Hi-Fi Design: Menu and Ordering",
+        "text": [
+          "The menu has search, category chips, and veg, non-veg, and spice markers. Tapping Add turns the item into a quantity stepper. A bottom bar shows the item count and total, and the Checkout button moves the order forward. Items that need customisation step through size, toppings, and beverages before they are added."
+        ],
+        "images": [
+          "/projects/table-mpos/13-final-menu-order.jpg"
+        ],
+        "captions": [
+          "Menu with the quantity stepper, and the table actions sheet with Table Details, Merge, Move, and Close."
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Hi-Fi Design: Checkout and KOT",
+        "text": [
+          "Checkout shows every KOT already sent, in order, along with any new items. Sent items are locked. New items are marked \"Not sent\" until they go to the kitchen as the next KOT. The totals cover the whole order, including service charge, discount, and CGST and SGST."
+        ],
+        "images": [
+          "/projects/table-mpos/14-final-checkout-split.jpg"
+        ],
+        "captions": [
+          "Checkout with KOT-1 (sent at 01:55 pm) and KOT-2 (sent at 02:12 pm). KOT-2 holds the items added after the first send."
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Hi-Fi Design: Payment",
+        "text": [
+          "The payment method screen offers Card, Cash, and UPI. Split payment divides the bill equally across guests, and each share is collected separately with its own payment method. Once the bill is paid, the table returns to available (green)."
+        ],
+        "images": [
+          "/projects/table-mpos/15-final-payment.jpg"
+        ],
+        "captions": [
+          "Payment method, split payment, and the payment received screen. The payment received screen shows a countdown back to the floor, with an option to stay on the screen to print the bill first."
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Success Metrics",
+        "text": [
+          "These are the targets the design was built around, ready to benchmark once measured on the restaurant floor."
+        ],
+        "bullets": [
+          {
+            "title": "Time to complete a table order",
+            "text": "Target: Under 30 seconds."
+          },
+          {
+            "title": "Order sent to the kitchen",
+            "text": "Target: Instantly, on send."
+          },
+          {
+            "title": "Order errors from re-entry",
+            "text": "Target: Reduced."
+          },
+          {
+            "title": "Time to split a bill",
+            "text": "Target: Quicker than manual split."
+          }
+        ]
+      },
+      {
+        "title": "Outcome",
+        "bullets": [
+          {
+            "title": "Locked KOTs",
+            "text": "Once an order is sent, its items cannot be edited. Changes go out as a new KOT, so the kitchen always sees a clear record of what was sent and when."
+          },
+          {
+            "title": "Controlled cancellation",
+            "text": "Cancelling a sent KOT needs manager approval, which protects the kitchen and keeps a check on lost revenue."
+          },
+          {
+            "title": "Flexible payment",
+            "text": "Guests can pay by card, cash, or UPI, and the bill can be split equally across guests, with each share collected separately."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "table-ordering-app",
+    "title": "Table Ordering App",
+    "kind": "Product — Tablet POS, table service",
+    "category": "products",
+    "size": "m",
+    "variant": "card",
+    "order": 7,
+    "year": "2026",
+    "color": "#191919",
+    "ink": "#F2F2F2",
+    "tagline": "Every table in view. Merge, move and split in a few taps.",
+    "summary": "The table-service side of a restaurant tablet POS: a live floor plan of every table, quick guest setup, merging and moving tables, and splitting a ticket equally or by item so each guest can pay separately.",
+    "role": "UI/UX Designer",
+    "tools": [
+      "Figma"
+    ],
+    "liveUrl": null,
+    "image": "/projects/table-ordering-app/cover.jpg",
+    "gallery": [
+      "/projects/table-ordering-app/01-floor-and-details.png",
+      "/projects/table-ordering-app/02-merge-tables.png",
+      "/projects/table-ordering-app/03-move-table.png",
+      "/projects/table-ordering-app/04-split-equal.png",
+      "/projects/table-ordering-app/05-split-summary.png",
+      "/projects/table-ordering-app/06-split-by-items.png"
+    ],
+    "facts": [
+      {
+        "label": "Role",
+        "value": "UI/UX Designer"
+      },
+      {
+        "label": "Product",
+        "value": "OneHubPOS — table ordering"
+      },
+      {
+        "label": "Platform",
+        "value": "Landscape tablet POS terminal"
+      },
+      {
+        "label": "Scope",
+        "value": "Floor plan, table setup, merge, move, split ticket"
+      },
+      {
+        "label": "Market",
+        "value": "India — prices in ₹, CGST and SGST"
+      },
+      {
+        "label": "Tools",
+        "value": "Figma"
+      }
+    ],
+    "stats": [
+      {
+        "value": "32",
+        "label": "tables on one scannable floor view"
+      },
+      {
+        "value": "3",
+        "label": "table states: available, occupied, payment"
+      },
+      {
+        "value": "5",
+        "label": "floors and areas, from Ground Floor to Pool"
+      },
+      {
+        "value": "2",
+        "label": "ways to split a bill: equally or by item"
+      }
+    ],
+    "flow": [
+      "See the floor",
+      "Set up the table",
+      "Take the order",
+      "Merge or move",
+      "Split the ticket",
+      "Pay"
+    ],
+    "sections": [
+      {
+        "title": "Background",
+        "text": [
+          "Dine-in service is the part of a restaurant POS where the most can go wrong. Staff are looking after many tables at once, parties grow and shrink, and a single bill often needs to be shared between guests.",
+          "I designed the table ordering experience for a tablet POS: how staff see the floor, open a table, rearrange tables and settle a bill, all inside the same terminal they use to take orders."
+        ]
+      },
+      {
+        "title": "Challenge",
+        "text": [
+          "How might we let staff see and control every table in one glance, and handle the awkward moments of dine-in service, like a group joining tables or a bill being shared, without slowing the rush?",
+          "Each of these actions has to be quick enough for service time, and safe enough that a wrong tap does not move the wrong order or charge the wrong person."
+        ]
+      },
+      {
+        "title": "The Problem",
+        "text": [
+          "Table service has a few moments that go wrong on a POS that was not designed for them. These were the moments I designed around."
+        ],
+        "bullets": [
+          {
+            "title": "Not knowing where things stand",
+            "text": "With dozens of tables, staff need to know which are free, which are occupied and which are waiting to pay, without opening each one."
+          },
+          {
+            "title": "Parties change",
+            "text": "Guests arrive in different numbers, join tables together or move to another floor, and the open order has to follow them."
+          },
+          {
+            "title": "One bill, many payers",
+            "text": "Groups want to split the check equally or pay only for what they ordered, and doing that by hand is slow and error-prone."
+          }
+        ]
+      },
+      {
+        "title": "Impact",
+        "text": [
+          "What the design is built to change, before it is tested at a real counter:"
+        ],
+        "bullets": [
+          {
+            "title": "Faster table awareness",
+            "text": "Colour-coded tiles, filters and a legend show the state of every table at a glance."
+          },
+          {
+            "title": "Safer rearranging",
+            "text": "Merge and move show exactly what is being combined or transferred, and confirm only after a choice is made."
+          },
+          {
+            "title": "Easier payment",
+            "text": "The system works out each person's share, and each person can pay separately."
+          },
+          {
+            "title": "Less to relearn",
+            "text": "Everything lives in the familiar POS shell, with the same navigation, keypad and Save and Charge actions."
+          }
+        ]
+      },
+      {
+        "title": "Key Design Decisions",
+        "bullets": [
+          {
+            "title": "A floor plan that reads like a legend",
+            "text": "Every table is a tile. Free tables show their capacity in green. Occupied and waiting-to-pay tables show the time opened, guests seated (for example 3/4) and the running amount in red and amber."
+          },
+          {
+            "title": "Filter by floor and status",
+            "text": "Floor and Status dropdowns, plus order-type tabs for Dine In, Takeaway, Delivery and Online, keep a large floor manageable."
+          },
+          {
+            "title": "A tile menu for the rare actions",
+            "text": "Table Details, Merge Table and Move Table sit in each tile's overflow menu, so the grid stays clean and the common action is just tapping a table."
+          },
+          {
+            "title": "Quick, forgiving table setup",
+            "text": "A guest stepper shows the table's maximum capacity. Assigning a server, a customer name and a mobile number are all optional, so staff can start an order immediately."
+          },
+          {
+            "title": "Show what is being merged",
+            "text": "The primary table is pinned at the top of the merge dialog with its guests and floor. A counter shows how many tables are selected, and Merge stays disabled until a table is chosen."
+          },
+          {
+            "title": "Say what a move will do",
+            "text": "The move dialog states that it is transferring the current order from the table to a new destination, with floor tabs to find it."
+          },
+          {
+            "title": "Two ways to split, one clear summary",
+            "text": "Equal split or split by items. The result is a short summary with each person's share and their own Pay button, plus a tip that everyone can pay with a different method."
+          },
+          {
+            "title": "Modals that keep context",
+            "text": "Every dialog opens over the floor or the order, so staff never lose track of where they were."
+          }
+        ]
+      },
+      {
+        "title": "Hi-Fi Design: Seeing the floor and opening a table",
+        "text": [
+          "The home screen is the floor plan: 32 tiles in a calm grid, colour-coded by status, with the order types across the top and Floor and Status filters below. A legend explains the colours.",
+          "Tapping a free table opens Table Details. A big guest stepper (capped at the table's maximum capacity of 6) sits on top, followed by optional fields for server, customer name and mobile number, and a Start Order button that takes the staff member straight to the order."
+        ],
+        "images": [
+          "/projects/table-ordering-app/01-floor-and-details.png"
+        ],
+        "captions": [
+          "Floor plan with status colours, and the Table Details dialog"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Hi-Fi Design: Merging and moving tables",
+        "text": [
+          "When a party outgrows a table, Merge Table shows the primary table with its guests and capacity, floor tabs for Ground Floor, 1st Floor, 2nd Floor, Outdoor and Pool, and a grid of tables to combine, with a selection count and the order amount shown on each selected table. Merge is disabled until a table is picked.",
+          "Move Table uses the same pattern for a different job: transferring the current order to a new table, with a clear explanation and a Cancel and Move pair."
+        ],
+        "images": [
+          "/projects/table-ordering-app/02-merge-tables.png",
+          "/projects/table-ordering-app/03-move-table.png"
+        ],
+        "captions": [
+          "Merge Table: before and after selecting a table",
+          "Move Table: transfer the current order to a new destination"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Hi-Fi Design: Splitting the bill equally",
+        "text": [
+          "Split Ticket opens over the order screen. In Equal Split, the staff member picks the number of people with quick chips from 2 to 7 or a custom stepper, and the Split Summary updates live with each person's share. Confirm Split turns it into a list of people, each with their own amount and Pay button, so each guest can settle separately and use a different payment method."
+        ],
+        "images": [
+          "/projects/table-ordering-app/04-split-equal.png",
+          "/projects/table-ordering-app/05-split-summary.png"
+        ],
+        "captions": [
+          "Equal split for 2 and 4 people",
+          "Split summary with a Pay button for each person"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Hi-Fi Design: Splitting by items",
+        "text": [
+          "For guests who want to pay only for what they ordered, Split by Items lists every item on the order with a checkbox and its price. Staff tick the items for one person and tap Split Items, which stays disabled until something is selected."
+        ],
+        "images": [
+          "/projects/table-ordering-app/06-split-by-items.png"
+        ],
+        "captions": [
+          "Split by Items: choose items per person"
+        ],
+        "layout": "wide"
+      },
+      {
+        "title": "Outcome",
+        "text": [
+          "The result is a connected set of table-service screens for a tablet POS: a status-coded floor plan, quick table setup, merge and move, and two ways to split a ticket. They share one visual language and one dialog pattern, so each action feels like part of the same system.",
+          "The next step is to test it with staff during a real service."
+        ]
+      },
+      {
+        "title": "Where it goes next",
+        "bullets": [
+          {
+            "title": "Test during service",
+            "text": "Time how long staff take to find a table, merge two tables and split a bill, and where they hesitate."
+          },
+          {
+            "title": "Colour-independent status",
+            "text": "Add an icon or label to each table state so it does not depend on colour alone."
+          },
+          {
+            "title": "Unequal splits",
+            "text": "Let a group split by custom amounts or percentages, not only equally or by item."
+          },
+          {
+            "title": "Undo and audit",
+            "text": "A way to reverse a merge or move, with a visible history for managers."
+          }
+        ]
+      }
+    ]
+  }
+]

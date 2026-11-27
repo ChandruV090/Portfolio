@@ -53,16 +53,41 @@ export function Icon({ name, size = 18 }) {
           <path d="M4 7.5l8 6 8-6" />
         </svg>
       );
+    case "arrow-up":
+      return (
+        <svg {...common}>
+          <path d="M12 19V5M5 12l7-7 7 7" />
+        </svg>
+      );
     case "arrow-up-right":
       return (
         <svg {...common}>
           <path d="M7 17L17 7M8.5 7H17v8.5" />
         </svg>
       );
+    case "arrow-left":
+      return (
+        <svg {...common}>
+          <path d="M19 12H5M11 18l-6-6 6-6" />
+        </svg>
+      );
     case "arrow-right":
       return (
         <svg {...common}>
           <path d="M5 12h14M13 6l6 6-6 6" />
+        </svg>
+      );
+    case "play":
+      return (
+        <svg {...common} fill="currentColor">
+          <polygon points="6 4 20 12 6 20 6 4" stroke="none" />
+        </svg>
+      );
+    case "pause":
+      return (
+        <svg {...common} fill="currentColor">
+          <rect x="6" y="5" width="4" height="14" rx="1" stroke="none" />
+          <rect x="14" y="5" width="4" height="14" rx="1" stroke="none" />
         </svg>
       );
     default:

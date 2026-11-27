@@ -1,0 +1,286 @@
+{
+  "title": "Focus for the CSM",
+  "kind": "Internal tool — CSM workspace (UX concept)",
+  "category": "products",
+  "size": "m",
+  "year": "2026",
+  "order": 8,
+  "tagline": "One ranked list that tells a CSM who needs them today, and why.",
+  "summary": "An internal workspace for YourDOST Customer Success Managers. It turns 22 accounts into a short, ranked 'needs attention today' list, explains why each account is there, and lets the CSM act and clear it in under a minute.",
+  "role": "UI/UX Designer",
+  "tools": [
+    "Figma"
+  ],
+  "color": "#1e1e1e",
+  "ink": "#F2F2F2",
+  "liveUrl": null,
+  "facts": [
+    {
+      "label": "Role",
+      "value": "UI/UX Designer"
+    },
+    {
+      "label": "Product",
+      "value": "YourDOST — CSM workspace"
+    },
+    {
+      "label": "Type",
+      "value": "Internal tool, desktop web"
+    },
+    {
+      "label": "Perspective",
+      "value": "The CSM (internal user)"
+    },
+    {
+      "label": "Scope",
+      "value": "Today view, account detail, log call, handled, not relevant, empty and stale states"
+    },
+    {
+      "label": "Tools",
+      "value": "Figma"
+    }
+  ],
+  "stats": [
+    {
+      "value": "22",
+      "label": "accounts in the portfolio"
+    },
+    {
+      "value": "6",
+      "label": "surfaced for action today"
+    },
+    {
+      "value": "9",
+      "label": "kept in a quiet 'Watching' group"
+    },
+    {
+      "value": "7",
+      "label": "states designed, from busy to all clear"
+    }
+  ],
+  "flow": [
+    "Scan the ranked list",
+    "Open an account",
+    "Log the call",
+    "Handled, with undo",
+    "Not relevant, with a reason",
+    "All clear",
+    "Stale data"
+  ],
+  "sections": [
+    {
+      "title": "Background",
+      "text": [
+        "YourDOST supports the wellbeing of people in corporates and colleges. Behind every client account is a Customer Success Manager, the CSM, who keeps the account healthy: campaigns running on time, reports delivered, risks caught early and promises kept.",
+        "A single CSM looks after many accounts at once. In this concept the user, Sana, has 22. This case study focuses on one problem, seen from the CSM's side: the internal tool they open first thing each morning."
+      ]
+    },
+    {
+      "title": "Challenge",
+      "text": [
+        "How might we tell a CSM, within seconds of opening the tool, which few accounts need them today and why, and let them act without leaving the page?",
+        "The tool should feel like a short, finishable to-do list for the day, not a database they have to dig through."
+      ]
+    },
+    {
+      "title": "The Problem",
+      "text": [
+        "Account data was there, but nothing was prioritising it for the person responsible. These are the gaps I designed around."
+      ],
+      "bullets": [
+        {
+          "title": "Too many accounts, no starting point",
+          "text": "With 22 accounts, a CSM has to decide for themselves where to begin. Quiet-but-risky accounts are easy to miss next to loud, routine ones."
+        },
+        {
+          "title": "No reason attached to a flag",
+          "text": "A red mark without a why makes a CSM open each account to find out. Time is lost before any work starts."
+        },
+        {
+          "title": "Logging a call feels like admin",
+          "text": "If recording an outcome takes a long form, it gets skipped, and the next person sees stale history."
+        },
+        {
+          "title": "No sense of being done",
+          "text": "A list that never shrinks gives no feeling of progress, so the day ends without anyone knowing what is left."
+        }
+      ]
+    },
+    {
+      "title": "Impact",
+      "text": [
+        "What the design is built to change, before it is tested with real CSMs:"
+      ],
+      "bullets": [
+        {
+          "title": "A faster start to the day",
+          "text": "The Today view opens on a ranked 'Needs attention today' list, ordered by urgency and then impact."
+        },
+        {
+          "title": "Decisions with context",
+          "text": "Every row carries a one-line reason and the numbers behind it, such as 'Engagement −34% · 2 flags · last contact 12d'."
+        },
+        {
+          "title": "Logging that gets done",
+          "text": "Log call is a small dialog with three outcome choices, a note and a next follow-up, and saving marks the account handled."
+        },
+        {
+          "title": "Visible progress",
+          "text": "A 'Handled today: 0 of 6' counter and a Handled group give the CSM a clear end point."
+        }
+      ]
+    },
+    {
+      "title": "Key Design Decisions",
+      "bullets": [
+        {
+          "title": "Rank first, then group",
+          "text": "The list is ranked by urgency, then impact, and split into Act now and Today. The 9 low-urgency accounts collapse into 'Watching (9) · nothing urgent' so they stay available but out of the way."
+        },
+        {
+          "title": "Say why in plain words",
+          "text": "Each row has a short reason, for example 'You promised a call-back yesterday and it is still open', plus a status chip such as Follow-up, Dropping, Report due or Low sign-ups."
+        },
+        {
+          "title": "Keep the portfolio picture in view",
+          "text": "A side column shows overall engagement for the 22 accounts (68.4%, up 3.1 points, with 9 accounts falling), the follow-ups due and the live campaigns, so the list never loses context."
+        },
+        {
+          "title": "An account page that explains itself",
+          "text": "Opening an account shows 'Why it is here' as a short timeline of signals, an eight-week engagement trend, key context and a single Suggested next step: 'Call the HR lead before noon'."
+        },
+        {
+          "title": "Act without leaving",
+          "text": "Log call, Schedule follow-up and Send nudge sit at the top of the page, and the account panel carries a primary action and a quiet 'Not relevant' option."
+        },
+        {
+          "title": "A call log under a minute",
+          "text": "The dialog says 'Takes under a minute. Saving marks this account handled today.' Outcome is one tap (Reached them, Left voicemail, No answer), and the next follow-up is a tap too: None, Tomorrow, In 3 days or Next week."
+        },
+        {
+          "title": "Handled is reversible",
+          "text": "A handled account moves to 'Handled today' with its outcome, for example 'Reached them · follow-up Tue', and an Undo link beside it. The new follow-up appears in the side column straight away."
+        },
+        {
+          "title": "Not relevant teaches the ranking",
+          "text": "Dismissing an account asks for a reason: Already handled, Expected (nothing to do), Not my account or Other. The dialog says this helps tune the ranking."
+        },
+        {
+          "title": "Honest empty and stale states",
+          "text": "When the list is cleared, the page says 'All clear for today' and keeps the handled items for review. When data is old, a banner says 'This list may be out of date', gives the time of the last sync and promises a refresh when data arrives."
+        }
+      ]
+    },
+    {
+      "title": "Hi-Fi Design: Scan the ranked list",
+      "text": [
+        "The Today view is the CSM's home. A greeting and three quick actions sit above the list. Three counts (Act now, Follow-ups due, Watching) summarise the day, and 'Handled today: 0 of 6' tracks progress.",
+        "Filters for All, Corporate and College let a CSM focus on one type of client. The right-hand column keeps engagement, follow-ups and live campaigns in view."
+      ],
+      "images": [
+        "01-home-ranked-list.jpg"
+      ],
+      "captions": [
+        "Today view: ranked accounts, reasons and portfolio context"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: Open an account",
+      "text": [
+        "Selecting Northwind Corp opens its panel in place. 'Why it is here' lists the signals in order: an employee escalation risk flag today, a second flag on Monday, 12 days with no contact and three weeks of declining engagement.",
+        "Below it, a trend chart and a small context block (last contact, open follow-ups, live campaign, renewal in 74 days) lead to the suggested next step."
+      ],
+      "images": [
+        "02-account-detail.jpg"
+      ],
+      "captions": [
+        "Account detail: why it is here, trend, context and next step"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: Log the call",
+      "text": [
+        "Choosing Log call opens a compact dialog titled with the account's name. Outcome, a short note ('What was agreed?') and the next follow-up are the only fields, and the primary button reads 'Save and mark handled', so the result of saving is clear before it is pressed."
+      ],
+      "images": [
+        "03-log-call.jpg"
+      ],
+      "captions": [
+        "Log call dialog with outcome, note and next follow-up"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: Handled, with undo",
+      "text": [
+        "After saving, Northwind Corp leaves the Act now list and appears under 'Handled today (1)' with 'Reached them · follow-up Tue' and an Undo link. The counters update (Today 2, Handled 1 of 6), and the Tuesday follow-up shows up in the side column. A confirmation message at the bottom offers Undo again."
+      ],
+      "images": [
+        "04-handled.jpg"
+      ],
+      "captions": [
+        "Handled state: the account moves down, counters update, Undo stays close"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: Not relevant, with a reason",
+      "text": [
+        "If an account should not be on the list, the CSM can say so. A small dialog asks 'Why is Northwind Corp not relevant?' and offers four reasons. The dialog notes that the answer helps tune the ranking, so dismissing becomes feedback and not just a way to hide a row."
+      ],
+      "images": [
+        "05-not-relevant.jpg"
+      ],
+      "captions": [
+        "Not relevant dialog with four reasons"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: All clear and stale data",
+      "text": [
+        "Two edge states keep the tool trustworthy. When all six are done, the list is replaced with 'All clear for today', the counters read 0 and 'Handled today: 6 of 6', and every handled account keeps an Undo.",
+        "When data has not synced, a banner above the list says it may be out of date and that the last sync was 2 days ago. The ranking stays visible, labelled 'as of then', so the CSM can still work and knows what to trust."
+      ],
+      "images": [
+        "06-all-clear.jpg",
+        "07-stale-data.jpg"
+      ],
+      "captions": [
+        "All clear: nothing left, everything reviewable",
+        "Stale data: a plain banner above the same list"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Outcome",
+      "text": [
+        "The result is a daily workspace built around one question, 'Who needs me today, and why?' It reduces 22 accounts to a short, ranked list, explains each flag in a sentence, lets a CSM log the result of a call in a few taps, and gives them a clear point at which they are done.",
+        "This is a design concept. It has not been tested with CSMs or measured in use, so the case study describes what the design is intended to do, not results."
+      ]
+    },
+    {
+      "title": "Where it goes next",
+      "bullets": [
+        {
+          "title": "Test with real CSMs",
+          "text": "Watch a few CSMs start their morning with it. Check whether the ranking matches their own judgement, and where they hesitate."
+        },
+        {
+          "title": "Make the ranking explainable",
+          "text": "Let a CSM see what moved an account up the list, and use the 'Not relevant' reasons to improve it."
+        },
+        {
+          "title": "Colour-independent states",
+          "text": "Make sure risk, follow-up and handled states also read through icons and labels, not only colour."
+        },
+        {
+          "title": "Handover and shared accounts",
+          "text": "Support accounts that change CSM, with Handover notes carried into the same account panel."
+        }
+      ]
+    }
+  ]
+}

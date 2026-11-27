@@ -1,0 +1,37 @@
+{
+  "title": "Project name",
+  "kind": "Product — short label shown on the tile",
+  "category": "products",
+  "size": "m",
+  "year": "2026",
+  "order": 10,
+  "tagline": "A short, punchy line shown on the tile.",
+  "summary": "One sentence about the project.",
+  "role": "UX/UI Designer",
+  "tools": [
+    "Figma",
+    "FigJam"
+  ],
+  "color": "#161616",
+  "ink": "#F2F2F2",
+  "liveUrl": null,
+  "hidden": false,
+  "sections": [
+    {
+      "title": "Overview",
+      "text": "What the project is and what you were asked to do."
+    },
+    {
+      "title": "The problem",
+      "text": "Who had the problem, and why it mattered."
+    },
+    {
+      "title": "Process",
+      "text": "Research, flows, wireframes, iterations, testing."
+    },
+    {
+      "title": "Outcome",
+      "text": "What shipped and what changed."
+    }
+  ]
+}

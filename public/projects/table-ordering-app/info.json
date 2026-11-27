@@ -1,0 +1,252 @@
+{
+  "title": "Table Ordering App",
+  "kind": "Product — Tablet POS, table service",
+  "category": "products",
+  "size": "m",
+  "year": "2026",
+  "order": 7,
+  "tagline": "Every table in view. Merge, move and split in a few taps.",
+  "summary": "The table-service side of a restaurant tablet POS: a live floor plan of every table, quick guest setup, merging and moving tables, and splitting a ticket equally or by item so each guest can pay separately.",
+  "role": "UI/UX Designer",
+  "tools": [
+    "Figma"
+  ],
+  "color": "#191919",
+  "ink": "#F2F2F2",
+  "liveUrl": null,
+  "facts": [
+    {
+      "label": "Role",
+      "value": "UI/UX Designer"
+    },
+    {
+      "label": "Product",
+      "value": "OneHubPOS — table ordering"
+    },
+    {
+      "label": "Platform",
+      "value": "Landscape tablet POS terminal"
+    },
+    {
+      "label": "Scope",
+      "value": "Floor plan, table setup, merge, move, split ticket"
+    },
+    {
+      "label": "Market",
+      "value": "India — prices in ₹, CGST and SGST"
+    },
+    {
+      "label": "Tools",
+      "value": "Figma"
+    }
+  ],
+  "stats": [
+    {
+      "value": "32",
+      "label": "tables on one scannable floor view"
+    },
+    {
+      "value": "3",
+      "label": "table states: available, occupied, payment"
+    },
+    {
+      "value": "5",
+      "label": "floors and areas, from Ground Floor to Pool"
+    },
+    {
+      "value": "2",
+      "label": "ways to split a bill: equally or by item"
+    }
+  ],
+  "flow": [
+    "See the floor",
+    "Set up the table",
+    "Take the order",
+    "Merge or move",
+    "Split the ticket",
+    "Pay"
+  ],
+  "sections": [
+    {
+      "title": "Background",
+      "text": [
+        "Dine-in service is the part of a restaurant POS where the most can go wrong. Staff are looking after many tables at once, parties grow and shrink, and a single bill often needs to be shared between guests.",
+        "I designed the table ordering experience for a tablet POS: how staff see the floor, open a table, rearrange tables and settle a bill, all inside the same terminal they use to take orders."
+      ]
+    },
+    {
+      "title": "Challenge",
+      "text": [
+        "How might we let staff see and control every table in one glance, and handle the awkward moments of dine-in service, like a group joining tables or a bill being shared, without slowing the rush?",
+        "Each of these actions has to be quick enough for service time, and safe enough that a wrong tap does not move the wrong order or charge the wrong person."
+      ]
+    },
+    {
+      "title": "The Problem",
+      "text": [
+        "Table service has a few moments that go wrong on a POS that was not designed for them. These were the moments I designed around."
+      ],
+      "bullets": [
+        {
+          "title": "Not knowing where things stand",
+          "text": "With dozens of tables, staff need to know which are free, which are occupied and which are waiting to pay, without opening each one."
+        },
+        {
+          "title": "Parties change",
+          "text": "Guests arrive in different numbers, join tables together or move to another floor, and the open order has to follow them."
+        },
+        {
+          "title": "One bill, many payers",
+          "text": "Groups want to split the check equally or pay only for what they ordered, and doing that by hand is slow and error-prone."
+        }
+      ]
+    },
+    {
+      "title": "Impact",
+      "text": [
+        "What the design is built to change, before it is tested at a real counter:"
+      ],
+      "bullets": [
+        {
+          "title": "Faster table awareness",
+          "text": "Colour-coded tiles, filters and a legend show the state of every table at a glance."
+        },
+        {
+          "title": "Safer rearranging",
+          "text": "Merge and move show exactly what is being combined or transferred, and confirm only after a choice is made."
+        },
+        {
+          "title": "Easier payment",
+          "text": "The system works out each person's share, and each person can pay separately."
+        },
+        {
+          "title": "Less to relearn",
+          "text": "Everything lives in the familiar POS shell, with the same navigation, keypad and Save and Charge actions."
+        }
+      ]
+    },
+    {
+      "title": "Key Design Decisions",
+      "bullets": [
+        {
+          "title": "A floor plan that reads like a legend",
+          "text": "Every table is a tile. Free tables show their capacity in green. Occupied and waiting-to-pay tables show the time opened, guests seated (for example 3/4) and the running amount in red and amber."
+        },
+        {
+          "title": "Filter by floor and status",
+          "text": "Floor and Status dropdowns, plus order-type tabs for Dine In, Takeaway, Delivery and Online, keep a large floor manageable."
+        },
+        {
+          "title": "A tile menu for the rare actions",
+          "text": "Table Details, Merge Table and Move Table sit in each tile's overflow menu, so the grid stays clean and the common action is just tapping a table."
+        },
+        {
+          "title": "Quick, forgiving table setup",
+          "text": "A guest stepper shows the table's maximum capacity. Assigning a server, a customer name and a mobile number are all optional, so staff can start an order immediately."
+        },
+        {
+          "title": "Show what is being merged",
+          "text": "The primary table is pinned at the top of the merge dialog with its guests and floor. A counter shows how many tables are selected, and Merge stays disabled until a table is chosen."
+        },
+        {
+          "title": "Say what a move will do",
+          "text": "The move dialog states that it is transferring the current order from the table to a new destination, with floor tabs to find it."
+        },
+        {
+          "title": "Two ways to split, one clear summary",
+          "text": "Equal split or split by items. The result is a short summary with each person's share and their own Pay button, plus a tip that everyone can pay with a different method."
+        },
+        {
+          "title": "Modals that keep context",
+          "text": "Every dialog opens over the floor or the order, so staff never lose track of where they were."
+        }
+      ]
+    },
+    {
+      "title": "Hi-Fi Design: Seeing the floor and opening a table",
+      "text": [
+        "The home screen is the floor plan: 32 tiles in a calm grid, colour-coded by status, with the order types across the top and Floor and Status filters below. A legend explains the colours.",
+        "Tapping a free table opens Table Details. A big guest stepper (capped at the table's maximum capacity of 6) sits on top, followed by optional fields for server, customer name and mobile number, and a Start Order button that takes the staff member straight to the order."
+      ],
+      "images": [
+        "01-floor-and-details.png"
+      ],
+      "captions": [
+        "Floor plan with status colours, and the Table Details dialog"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: Merging and moving tables",
+      "text": [
+        "When a party outgrows a table, Merge Table shows the primary table with its guests and capacity, floor tabs for Ground Floor, 1st Floor, 2nd Floor, Outdoor and Pool, and a grid of tables to combine, with a selection count and the order amount shown on each selected table. Merge is disabled until a table is picked.",
+        "Move Table uses the same pattern for a different job: transferring the current order to a new table, with a clear explanation and a Cancel and Move pair."
+      ],
+      "images": [
+        "02-merge-tables.png",
+        "03-move-table.png"
+      ],
+      "captions": [
+        "Merge Table: before and after selecting a table",
+        "Move Table: transfer the current order to a new destination"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: Splitting the bill equally",
+      "text": [
+        "Split Ticket opens over the order screen. In Equal Split, the staff member picks the number of people with quick chips from 2 to 7 or a custom stepper, and the Split Summary updates live with each person's share. Confirm Split turns it into a list of people, each with their own amount and Pay button, so each guest can settle separately and use a different payment method."
+      ],
+      "images": [
+        "04-split-equal.png",
+        "05-split-summary.png"
+      ],
+      "captions": [
+        "Equal split for 2 and 4 people",
+        "Split summary with a Pay button for each person"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: Splitting by items",
+      "text": [
+        "For guests who want to pay only for what they ordered, Split by Items lists every item on the order with a checkbox and its price. Staff tick the items for one person and tap Split Items, which stays disabled until something is selected."
+      ],
+      "images": [
+        "06-split-by-items.png"
+      ],
+      "captions": [
+        "Split by Items: choose items per person"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Outcome",
+      "text": [
+        "The result is a connected set of table-service screens for a tablet POS: a status-coded floor plan, quick table setup, merge and move, and two ways to split a ticket. They share one visual language and one dialog pattern, so each action feels like part of the same system.",
+        "The next step is to test it with staff during a real service."
+      ]
+    },
+    {
+      "title": "Where it goes next",
+      "bullets": [
+        {
+          "title": "Test during service",
+          "text": "Time how long staff take to find a table, merge two tables and split a bill, and where they hesitate."
+        },
+        {
+          "title": "Colour-independent status",
+          "text": "Add an icon or label to each table state so it does not depend on colour alone."
+        },
+        {
+          "title": "Unequal splits",
+          "text": "Let a group split by custom amounts or percentages, not only equally or by item."
+        },
+        {
+          "title": "Undo and audit",
+          "text": "A way to reverse a merge or move, with a visible history for managers."
+        }
+      ]
+    }
+  ]
+}

@@ -2,6 +2,7 @@ import "@fontsource-variable/instrument-sans";
 import "./globals.css";
 import { site } from "../data/site";
 import CursorTrail from "../components/CursorTrail";
+import ScrollToTop from "../components/ScrollToTop";
 
 export const metadata = {
   title: `${site.name} — ${site.role}`,
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
       <body>
         {children}
         <CursorTrail />
+        <ScrollToTop />
       </body>
     </html>
   );

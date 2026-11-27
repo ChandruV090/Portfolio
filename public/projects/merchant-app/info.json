@@ -1,0 +1,303 @@
+{
+  "title": "OneHubPOS Merchant App",
+  "kind": "Product — AI merchant app",
+  "category": "products",
+  "size": "wide",
+  "year": "2026",
+  "order": 4,
+  "tagline": "Run every store from your phone, by simply asking.",
+  "summary": "A conversational, mobile-first POS companion for OneHubPOS merchants. It brings multi-store management, live sales numbers and AI-guided menu tasks into one clean app, so a restaurant owner can add an item, change a tax rule or disable a dish in a few taps instead of a desktop form.",
+  "role": "UI/UX Designer",
+  "tools": [
+    "Figma"
+  ],
+  "color": "#202020",
+  "ink": "#F2F2F2",
+  "liveUrl": null,
+  "facts": [
+    {
+      "label": "Role",
+      "value": "UI/UX Designer"
+    },
+    {
+      "label": "Product",
+      "value": "OneHubPOS — merchant management app"
+    },
+    {
+      "label": "Platform",
+      "value": "Mobile app (iOS-style)"
+    },
+    {
+      "label": "Industry",
+      "value": "Restaurant tech · SaaS"
+    },
+    {
+      "label": "Duration",
+      "value": "8 weeks"
+    },
+    {
+      "label": "Tools",
+      "value": "Figma"
+    }
+  ],
+  "stats": [
+    {
+      "value": "~60%",
+      "label": "fewer task steps with AI-guided flows"
+    },
+    {
+      "value": "7",
+      "label": "guided steps to add a menu item by chat"
+    },
+    {
+      "value": "4",
+      "label": "core tabs: Home, AI Assistant, Support, Profile"
+    }
+  ],
+  "flow": [
+    "Onboarding",
+    "Sign in",
+    "Set PIN",
+    "Select store",
+    "Ask the AI",
+    "Confirm",
+    "Undo if needed"
+  ],
+  "sections": [
+    {
+      "title": "Background",
+      "text": [
+        "OneHubPOS is a point-of-sale system for restaurants. Merchants already run their stores on it, but most of the work still happens on a desktop, behind a counter, in dense screens made for staff who sit down to use them.",
+        "This project reimagines merchant operations as a clean, AI-guided mobile experience. I designed the app end to end over eight weeks: from the first briefing and competitor research to a clickable prototype and handoff assets."
+      ]
+    },
+    {
+      "title": "Challenge",
+      "text": [
+        "How might we let a busy restaurant owner manage several stores from their phone, and finish routine tasks without hunting through menus or filling in long forms?",
+        "Restaurant merchants handle dozens of operational tasks every day. A mobile app has to make those tasks feel lighter than the desktop version, not just smaller."
+      ]
+    },
+    {
+      "title": "The Problem",
+      "text": [
+        "Most existing POS systems are cluttered, desktop-first and need too many manual steps. Data sits in silos, updates are slow, and an owner with more than one store has no single place to see how things are going."
+      ],
+      "bullets": [
+        {
+          "title": "What was broken",
+          "text": "Overloaded and cluttered screens, manual steps, desktop-only access, siloed data, slow updates, no visibility across stores and confusing navigation."
+        },
+        {
+          "title": "What it needed to become",
+          "text": "AI-powered, mobile-first, with a unified view, smart alerts, conversational tasks, fast onboarding, real-time sync, a focused dashboard and multi-store support."
+        }
+      ]
+    },
+    {
+      "title": "Impact",
+      "text": [
+        "What the design delivers, from the outcomes I set out to reach:"
+      ],
+      "bullets": [
+        {
+          "title": "Faster workflows",
+          "text": "AI-guided flows replace multi-step forms, cutting roughly 60% of the steps in common tasks."
+        },
+        {
+          "title": "Mobile-first clarity",
+          "text": "Thumb-zone actions and a bottom tab bar keep the most used controls within easy reach."
+        },
+        {
+          "title": "AI automation",
+          "text": "A conversational assistant handles item creation, menu upload, tax changes and availability."
+        },
+        {
+          "title": "Multi-store ready",
+          "text": "Branch cards with inline KPIs and open or closed status give owners one view of every location."
+        }
+      ]
+    },
+    {
+      "title": "Design Process",
+      "text": [
+        "I worked in four stages across the eight weeks, moving from understanding the client's goals to a prototype that could be handed to engineers and shown to investors."
+      ],
+      "bullets": [
+        {
+          "title": "1. Discovery",
+          "text": "Client briefing, MVP goals definition and competitor research."
+        },
+        {
+          "title": "2. UX Design",
+          "text": "App flow, wireframes and user testing."
+        },
+        {
+          "title": "3. UI Design",
+          "text": "Moodboard, concept design, layouts, responsive designs and the design system."
+        },
+        {
+          "title": "4. Handoff",
+          "text": "A clickable prototype, design handoff and investor presentation assets."
+        }
+      ]
+    },
+    {
+      "title": "Key Design Decisions",
+      "bullets": [
+        {
+          "title": "Ask, don't navigate",
+          "text": "The AI Assistant sits in the main tab bar, greets the merchant with recommended actions (Add New Item, Upload New Menu Item, Disable Items, Change Tax Configuration, Update Price, Day End Report) and also accepts free text and voice."
+        },
+        {
+          "title": "Turn long forms into short conversations",
+          "text": "Adding an item is seven small steps in a chat, each with a progress bar, so the merchant answers one question at a time instead of facing a form."
+        },
+        {
+          "title": "Let the AI suggest, the merchant decide",
+          "text": "When setting a price, the assistant offers a suggestion based on similar items with a Use button. The merchant can ignore it."
+        },
+        {
+          "title": "Review before it counts, undo after",
+          "text": "Every guided task ends in a preview card with Edit and Confirm, and a success message with Undo, so mistakes are cheap."
+        },
+        {
+          "title": "A card hierarchy built for glancing",
+          "text": "Each store is a card with gross sales, taxes, total orders and the day's change, plus an Open or Closed badge, so the state of the business reads in seconds."
+        },
+        {
+          "title": "Secure without friction",
+          "text": "A four-digit PIN and an optional biometric prompt replace repeated password entry, and a clear confirmation closes the password reset."
+        }
+      ]
+    },
+    {
+      "title": "Hi-Fi Design: Getting in",
+      "text": [
+        "The app opens with a short onboarding that says what the product does in four screens: Welcome, Track Everything, Easy Payments and Manage Your Team. Each has one illustration, one line of copy, a Next button and a Skip for people who already know what they want.",
+        "Sign in is a plain email and password screen with a Forgot password link and a Contact Sales route for new merchants. After that the merchant sets a PIN on a large numpad, with an inline field that fills as they type, and is offered biometric access through a bottom sheet with a Maybe later option. Resetting a password ends on a clear success state with a single Back to Login action."
+      ],
+      "showMerchantOnboarding": true,
+      "onboardingCaption": "Splash and onboarding: four screens, always skippable",
+      "images": [
+        "02-login-pin.png"
+      ],
+      "captions": [
+        "Sign in, PIN setup, biometrics and password reset"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: Seeing every store",
+      "text": [
+        "The home screen starts with Select Store. A date picker sits at the top, tabs separate Restaurant (7) from Retail (3), and each branch is a card with gross sales, taxes, total orders and a +12.5% today indicator. A green Open or red Closed badge tells the merchant at once which stores are trading.",
+        "Bold numbers, soft cards and one blue accent keep the dashboard calm even with many branches on it."
+      ],
+      "images": [
+        "03-store selection.png"
+      ],
+      "captions": [
+        "The multi-store Select Store dashboard"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: The AI Assistant",
+      "text": [
+        "The assistant opens with \"Hi! How can I help you today?\" and six recommended actions, so a merchant never faces a blank chat. A message box with an attach button and a mic sits above the tab bar, and quick-action chips stay visible during a conversation.",
+        "Adding a menu item shows how the pattern works. The assistant says \"Let's add a new item, I'll guide you through each step\" and asks for the name, then the item group (with tappable categories and a Create new category option), then the price with an AI suggestion. Completed answers collapse into a checklist above, so the merchant always sees what they have already given. Step seven is a preview with name, category, price, availability, tax and inventory, then Edit or Confirm. Once created, a toast confirms it and offers Undo."
+      ],
+      "images": [
+        "06-ai-assistant-home.png",
+        "03-ai-add-item.png"
+      ],
+      "captions": [
+        "The assistant's home with recommended actions",
+        "Add New Item: seven guided steps from name to confirmation"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: More things to ask",
+      "text": [
+        "The same chat pattern covers the other everyday jobs. Upload menu item lets the merchant upload a photo of a menu item so the assistant can extract the details automatically, for review and confirmation. Change tax rule finds the item, shows its current rule and lets the merchant choose a new one. Disable item searches for the item and offers per-channel switches, so a dish can be turned off for Dine-in, delivery or online ordering independently."
+      ],
+      "images": [
+        "04-ai-quick-actions.png"
+      ],
+      "captions": [
+        "Upload menu item, change tax rule and disable item flows"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Visual Language",
+      "text": [
+        "A bold, legible type pairing and a high-contrast palette, tuned for glancing at a phone in a busy kitchen or dining room. Manrope in four weights (Regular, Medium, SemiBold, Bold) carries everything. A confident blue (#004FFF) is the primary colour, supported by orange (#F79009), pink (#FA6682), cyan (#3ED7F4) and mint (#65EDB1) for charts, status and illustration accents."
+      ],
+      "images": [
+        "05-visual-language.png"
+      ],
+      "captions": [
+        "Manrope and the colour palette"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Challenges and how I solved them",
+      "bullets": [
+        {
+          "title": "Overloaded dashboards",
+          "text": "A modular card hierarchy with bold metric type and scannable layouts."
+        },
+        {
+          "title": "Poor mobile UX",
+          "text": "Mobile-first screens with thumb-zone-optimised actions."
+        },
+        {
+          "title": "Manual processes",
+          "text": "AI-guided conversational flows that replace multi-step forms."
+        },
+        {
+          "title": "Multi-store complexity",
+          "text": "Unified branch cards with inline KPIs and status badges."
+        }
+      ]
+    },
+    {
+      "title": "Outcome",
+      "text": [
+        "The result is a complete mobile app for OneHubPOS merchants: a short onboarding, secure sign-in, a multi-store dashboard and an AI Assistant that handles the most common menu and tax tasks through conversation. It is delivered as a design system, a clickable prototype, a handoff and presentation assets for investors.",
+        "Together they give the merchant faster workflows, mobile-first clarity, AI automation and a single view across every store."
+      ],
+      "images": [
+        "onehubpos-smooth-device.mp4"
+      ],
+      "captions": [
+        "OneHubPOS Merchant App prototype walkthrough"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Where it goes next",
+      "bullets": [
+        {
+          "title": "Test with merchants",
+          "text": "Watch owners complete the add-item and tax-change flows, and measure the real step and time savings."
+        },
+        {
+          "title": "Smart alerts",
+          "text": "Quiet, useful notifications when a store closes unexpectedly or sales drop."
+        },
+        {
+          "title": "More assistant skills",
+          "text": "Price updates and the day-end report, already shown as recommended actions, taken all the way through."
+        },
+        {
+          "title": "Accessibility",
+          "text": "Larger text support and contrast checks across the full palette."
+        }
+      ]
+    }
+  ]
+}

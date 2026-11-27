@@ -1,0 +1,290 @@
+{
+  "title": "Staff Login, Clock In/Out",
+  "kind": "Product — POS staff terminal",
+  "category": "products",
+  "size": "wide",
+  "year": "2026",
+  "order": 5,
+  "tagline": "From a 4-digit PIN to a submitted timesheet, all inside the POS.",
+  "summary": "A seamless staff experience for a restaurant point-of-sale terminal: PIN sign-in on a shared device, one-tap clock in, break tracking with a clear allowance, a live timesheet and a shift summary, all in the same screen staff use to take orders.",
+  "role": "UI/UX Designer",
+  "tools": [
+    "Figma"
+  ],
+  "color": "#1a1a1a",
+  "ink": "#F2F2F2",
+  "liveUrl": null,
+  "facts": [
+    {
+      "label": "Role",
+      "value": "UI/UX Designer"
+    },
+    {
+      "label": "Product",
+      "value": "OneHubPOS — staff terminal"
+    },
+    {
+      "label": "Client",
+      "value": "Mylapore Express (restaurant)"
+    },
+    {
+      "label": "Platform",
+      "value": "Tablet POS terminal, shared by multiple staff"
+    },
+    {
+      "label": "Scope",
+      "value": "PIN login, clock in/out, breaks, timesheet, shift summary"
+    },
+    {
+      "label": "Tools",
+      "value": "Figma"
+    }
+  ],
+  "stats": [
+    {
+      "value": "<3s",
+      "label": "average login time with a PIN"
+    },
+    {
+      "value": "0",
+      "label": "forgotten clock-ins in user testing"
+    },
+    {
+      "value": "8",
+      "label": "participants tested, across two restaurants"
+    },
+    {
+      "value": "6",
+      "label": "steps in a staff shift, from arrival to clock out"
+    }
+  ],
+  "flow": [
+    "Arrive & authenticate",
+    "Welcome screen",
+    "Clock in",
+    "Take orders",
+    "Break",
+    "Clock out"
+  ],
+  "sections": [
+    {
+      "title": "Background",
+      "text": [
+        "Mylapore Express runs its restaurant on OneHubPOS. Staff share one terminal at the counter, and each person needs to identify themselves, log their hours and take orders on it, often in the middle of a rush.",
+        "I designed the staff side of the terminal: how people sign in, start and end shifts, take breaks and see their own hours, so that time tracking becomes part of the way they already use the POS, not a separate chore."
+      ]
+    },
+    {
+      "title": "Challenge",
+      "text": [
+        "How might we give every staff member secure, personal access to a shared POS terminal, while keeping sign-in and time tracking fast enough to disappear into the shift?",
+        "Mylapore Express needed a unified terminal that staff could operate with minimal training, handling personal authentication, shift tracking, break management and order processing from a single touchpoint. The key tension was security without friction, and rich data without cognitive overload."
+      ]
+    },
+    {
+      "title": "The Problem",
+      "text": [
+        "Legacy POS systems made staff work around the tool. Passwords slowed every handoff, clocking in was easy to forget, and nobody could see their own hours until payday."
+      ],
+      "bullets": [
+        {
+          "title": "For staff",
+          "text": "No visibility into their hours or break allowance, and slow logins at shift change."
+        },
+        {
+          "title": "For managers",
+          "text": "Payroll disputes and manual corrections caused by missed clock-ins, and break rules they had to police."
+        }
+      ]
+    },
+    {
+      "title": "Impact",
+      "text": [
+        "Usability testing with 8 participants across two restaurant locations showed measurable improvements over the legacy system:"
+      ],
+      "bullets": [
+        {
+          "title": "Faster sign-in",
+          "text": "Average login time with a PIN was under three seconds, against the 30 to 60 seconds that password logins added to every shift change."
+        },
+        {
+          "title": "No forgotten clock-ins",
+          "text": "Zero forgotten clock-ins during user testing, because the Clock In action sits on the first screen after login."
+        },
+        {
+          "title": "Clear, trusted hours",
+          "text": "Staff can see worked time, break allowance and weekly total at any moment instead of waiting for a payslip."
+        }
+      ]
+    },
+    {
+      "title": "Research Insights",
+      "text": [
+        "I ran contextual interviews with front-of-house and back-office staff. They surfaced four recurring pain points with legacy POS systems, and each one shaped a part of the design."
+      ],
+      "bullets": [
+        {
+          "title": "Forgotten clock-ins",
+          "text": "Staff frequently started shifts without clocking in, leading to payroll disputes and manual corrections by managers. The response: a Clock In offer on the welcome screen and a persistent clock in and out button."
+        },
+        {
+          "title": "Slow handoffs",
+          "text": "Password-based logins added 30 to 60 seconds to every shift change, a real bottleneck at peak service. The response: a four-digit PIN pad."
+        },
+        {
+          "title": "Opaque timesheets",
+          "text": "Staff had no visibility into their own hours or break allowances until payslips arrived, and this eroded trust. The response: a live timesheet with worked time, break time and weekly total."
+        },
+        {
+          "title": "Ambiguous break rules",
+          "text": "Break allowances varied by role and shift length. Staff guessed and managers policed. The response: an allowance counter (for example 0m of 30m) and an over-allowance note on the summary."
+        }
+      ]
+    },
+    {
+      "title": "Design Process",
+      "text": [
+        "I followed the staff through one full shift, then designed the screens around the moments that mattered most."
+      ],
+      "bullets": [
+        {
+          "title": "1. Listen",
+          "text": "Contextual interviews with front-of-house and back-office staff."
+        },
+        {
+          "title": "2. Map the journey",
+          "text": "Lay out a single shift end to end to find friction and opportunity."
+        },
+        {
+          "title": "3. Design",
+          "text": "Build purpose-made screens: minimal during service, detailed when context calls for it."
+        },
+        {
+          "title": "4. Test",
+          "text": "Usability testing with 8 participants across two restaurant locations, compared against the legacy system."
+        }
+      ]
+    },
+    {
+      "title": "User Flow Mapping",
+      "text": [
+        "I mapped the complete staff journey across a single shift to identify moments of friction and opportunity. It has six steps: arrive and authenticate with a 4-digit PIN on a shared terminal, a personalised welcome screen with quick actions, a one-tap clock in that starts the shift timer immediately, order taking, breaks that pause the shift with a visible timer and notify the manager, and a clock out that shows a shift summary, flags overtime and submits the timesheet."
+      ]
+    },
+    {
+      "title": "Key Design Decisions",
+      "bullets": [
+        {
+          "title": "A PIN, not a password",
+          "text": "A large numpad and four-digit PIN make signing in on a shared terminal take seconds. Forgot PIN is one tap away, and a Clear key sits beside the digits."
+        },
+        {
+          "title": "A welcome that does the next job",
+          "text": "After login the person sees a personalised greeting and two choices: Open POS or Clock in for shift, with a quiet note if they have not clocked in today."
+        },
+        {
+          "title": "One persistent action",
+          "text": "The big button at the bottom left changes with the state of the shift: green Clock In, red Clock Out, blue Start new shift. The state is visible without reading."
+        },
+        {
+          "title": "Hours that are always visible",
+          "text": "Four summary tiles show scheduled time, worked today, break allowance remaining and the week so far, so staff always know where they stand."
+        },
+        {
+          "title": "Breaks without guesswork",
+          "text": "A modal shows a running break timer and when it started, with a single Resume shift button and a note that the manager will be notified."
+        },
+        {
+          "title": "A summary that closes the loop",
+          "text": "At clock out a banner confirms the shift, with total time, break used, overtime and a note on whether it was approved automatically or submitted for approval."
+        },
+        {
+          "title": "Context kept in view",
+          "text": "The login screen shows the terminal, store and build version in the footer, so a shared device is always identifiable."
+        }
+      ]
+    },
+    {
+      "title": "Hi-Fi Design: Getting in",
+      "text": [
+        "The login screen puts a time-of-day greeting and a large clock on the left and a PIN pad on the right, with the dots filling as digits are entered. Once the PIN is accepted, the welcome screen says \"Welcome back, John\", shows the role, and offers Open POS (take orders and process payments) or Clock in for shift (you haven't clocked in today), with Sign out underneath."
+      ],
+      "images": [
+        "01-pin-and-welcome.png"
+      ],
+      "captions": [
+        "PIN sign-in and the personalised welcome screen"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: Starting a shift",
+      "text": [
+        "The timesheet is a calm, two-panel screen. On the left sit the date, the person, their off-shift status, last clock-in, weekly hours and the main action. On the right are four summary tiles and a table of recent shifts with date, role, clock in, clock out, break and hours. Before a shift the table shows a friendly empty state: \"No shifts today yet. Tap Clock in on the left to start your shift.\"",
+        "Once the person clocks in, the same screen updates in place: the status changes to on shift, the worked time starts counting, the estimated clock-out time appears and the button turns red. Today, This week and All tabs let staff check their history, and an export button sits at the top right."
+      ],
+      "images": [
+        "02-pre-shift-and-active.png"
+      ],
+      "captions": [
+        "Before the shift, and the same screen once the shift is active"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: Break and clock out",
+      "text": [
+        "Tapping Break dims the screen behind a focused modal with the break timer, the start time and a single Resume shift action, so the break is clear and hard to leave running by accident.",
+        "At clock out, a success banner summarises the shift and the tiles update to show total time, break against allowance (45m of 30m, flagged as 15 minutes over), overtime, and the weekly total, with a note that the overtime was approved automatically. The side panel keeps the day's totals, and the main action becomes Start new shift."
+      ],
+      "images": [
+        "03-break-and-complete.png"
+      ],
+      "captions": [
+        "Break modal, and the shift-complete summary"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: Straight into orders",
+      "text": [
+        "Open POS takes the staff member directly into order entry on the same terminal: product groups across the top, items with tags such as Customizable, Spicy and stock left, the current order on the right with subtotal, tax and total, and a single Charge button."
+      ],
+      "images": [
+        "04-order-screen.png"
+      ],
+      "captions": [
+        "Order entry after sign-in"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Outcome",
+      "text": [
+        "The staff experience now runs as one connected flow, from arriving at the terminal to submitting a timesheet. In usability testing with 8 participants across two locations, login took under three seconds on average and there were no forgotten clock-ins.",
+        "Screens are purpose-built for their moment: minimal during high-pressure service and detailed when context calls for it."
+      ]
+    },
+    {
+      "title": "Where it goes next",
+      "bullets": [
+        {
+          "title": "Test over a longer period",
+          "text": "Eight participants shows promise, but a full payroll cycle would show whether missed clock-ins and corrections really drop."
+        },
+        {
+          "title": "Manager view",
+          "text": "Approvals, overtime review and break notifications for the person on the other end of the timesheet."
+        },
+        {
+          "title": "PIN safety",
+          "text": "Lockout and recovery rules for repeated wrong PINs on a shared device."
+        },
+        {
+          "title": "Accessibility",
+          "text": "Check contrast on the status text and add larger touch targets for the busiest screens."
+        }
+      ]
+    }
+  ]
+}
