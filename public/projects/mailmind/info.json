@@ -1,0 +1,376 @@
+{
+  "title": "MailMind",
+  "kind": "Product — AI email app",
+  "category": "products",
+  "size": "tall",
+  "year": "2026",
+  "order": 3,
+  "tagline": "From 50 unread emails to inbox clear in about eight minutes.",
+  "summary": "MailMind turns the passive, chronological inbox into an AI-orchestrated workspace: a Morning Brief, an inbox sorted by intent, AI-drafted replies you approve with one tap, a calendar, a chat assistant and hands-free voice triage. The AI does the heavy lifting; you always pull the trigger.",
+  "role": "Lead UI/UX Designer",
+  "tools": [
+    "Figma",
+    "Prototyping"
+  ],
+  "color": "#181818",
+  "ink": "#F2F2F2",
+  "liveUrl": null,
+  "facts": [
+    {
+      "label": "Role",
+      "value": "Lead UI/UX Designer"
+    },
+    {
+      "label": "Product",
+      "value": "MailMind — AI-powered email app"
+    },
+    {
+      "label": "Platform",
+      "value": "Desktop web app, dark and light themes"
+    },
+    {
+      "label": "Duration",
+      "value": "5 days"
+    },
+    {
+      "label": "Focus",
+      "value": "IA, interaction design, prototyping"
+    },
+    {
+      "label": "Tools",
+      "value": "Figma"
+    }
+  ],
+  "stats": [
+    {
+      "value": "5",
+      "label": "core workspaces: Brief, Inbox, Drafts, Calendar, Voice"
+    },
+    {
+      "value": "~8 min",
+      "label": "designed path from app open to inbox clear"
+    },
+    {
+      "value": "70%",
+      "label": "target reduction in triage time"
+    }
+  ],
+  "flow": [
+    "Open app",
+    "Morning Brief",
+    "Intent segments",
+    "AI drafts",
+    "Approve",
+    "Inbox clear"
+  ],
+  "sections": [
+    {
+      "title": "Background",
+      "text": [
+        "MailMind is an AI-powered email application that treats the inbox as an active productivity hub instead of a passive list. I designed it end to end, from research and information architecture to a set of high-fidelity screens and an interactive prototype.",
+        "The central idea is simple: AI should do the sorting, summarising and first drafts, and a person should always make the final call."
+      ]
+    },
+    {
+      "title": "Challenge",
+      "text": [
+        "How might we help someone clear a flooded inbox in minutes, while making sure they trust what the AI is doing on their behalf?",
+        "Most email tools bolt AI onto the same chronological list. The challenge was to rethink how the inbox is organised and to make every AI action visible, explainable and reversible."
+      ]
+    },
+    {
+      "title": "The Problem",
+      "text": [
+        "Knowledge workers spend around 2.6 hours a day on email triage: reading, sorting and replying. Existing tools treat the inbox as a chronological dump, which keeps people in a reactive mode and mixes urgent client requests with newsletters.",
+        "Opening the inbox in the morning is the peak of the pain, and many people do not trust AI enough to let it send on their behalf."
+      ],
+      "bullets": [
+        {
+          "title": "For users",
+          "text": "Morning anxiety, important emails buried in noise, constant switching between email and calendar, and repetitive replies."
+        },
+        {
+          "title": "For trust",
+          "text": "Fear that an AI could send the wrong thing to a client, so full automation is a non-starter."
+        }
+      ]
+    },
+    {
+      "title": "Impact",
+      "text": [
+        "What the design is built to change, before it is tested with real users:"
+      ],
+      "bullets": [
+        {
+          "title": "Less morning anxiety",
+          "text": "A three-sentence Morning Brief replaces a wall of unread items."
+        },
+        {
+          "title": "Faster triage",
+          "text": "Emails are grouped by intent, so the user decides what to do instead of working out what each email is. The design targets up to 70% less triage time."
+        },
+        {
+          "title": "Trust by default",
+          "text": "Every AI action is labelled and needs an explicit Approve or Edit before anything is sent."
+        },
+        {
+          "title": "Fewer context switches",
+          "text": "Calendar, chat assistant and voice live inside the same workspace."
+        }
+      ]
+    },
+    {
+      "title": "Research Insights",
+      "text": [
+        "I combined contextual inquiry, a survey and a competitive review of Gmail, Superhuman, Spark, Shortwave and others. Four insights shaped the product, and each one turned into a design decision."
+      ],
+      "bullets": [
+        {
+          "title": "Morning anxiety is the peak pain",
+          "text": "Users dread opening the inbox at 9 AM and want a summary, not a list of 50 unread items. Design implication: a Morning Brief dashboard."
+        },
+        {
+          "title": "Distrust of full automation",
+          "text": "Users want AI to do the heavy lifting, but they must pull the trigger. Design implication: strict human-in-the-loop validation."
+        },
+        {
+          "title": "Triage, not reading, is the time sink",
+          "text": "Deciding what an email is takes more effort than reading it. Design implication: group by intent, not chronology."
+        },
+        {
+          "title": "Context-switching is costly",
+          "text": "Replying often means finding a past invoice or checking a calendar. Design implication: calendar and an AI chat assistant inside the workspace."
+        }
+      ]
+    },
+    {
+      "title": "Personas",
+      "text": [
+        "Two people anchored the decisions: one who needs speed, one who needs structure."
+      ],
+      "bullets": [
+        {
+          "title": "Sarah, the Startup Founder",
+          "text": "Runs a 15-person startup and dreads mornings. Wants the inbox under 20 items by noon, never to miss an investor email, and replies drafted in under 10 seconds."
+        },
+        {
+          "title": "Marcus, the Enterprise Manager",
+          "text": "Manages teams across three time zones and is CC'd on everything. Wants to delegate 40% of requests, see morning visibility into team comms, and track approvals without chasing."
+        }
+      ]
+    },
+    {
+      "title": "Design Process",
+      "text": [
+        "I worked in five days, so I kept the process tight and front-loaded the thinking."
+      ],
+      "bullets": [
+        {
+          "title": "1. Discover",
+          "text": "Contextual inquiry, survey and competitive analysis to find the real pain."
+        },
+        {
+          "title": "2. Define",
+          "text": "A problem statement and Jobs-to-be-Done across functional, emotional and social needs."
+        },
+        {
+          "title": "3. Structure",
+          "text": "Hub-and-spoke information architecture and two core user flows."
+        },
+        {
+          "title": "4. Wireframe",
+          "text": "Lo-fi layouts for the dashboard, inbox and thread detail."
+        },
+        {
+          "title": "5. Design",
+          "text": "Hi-fi screens, states and a dark and light design system in Figma."
+        },
+        {
+          "title": "6. Prototype and test next",
+          "text": "An interactive prototype now exists. Next is testing it with real users."
+        }
+      ]
+    },
+    {
+      "title": "Jobs To Be Done",
+      "text": [
+        "The problem statement: users need to triage a large inbox quickly and safely, but tools give them a passive list. I framed the needs as three kinds of jobs."
+      ],
+      "bullets": [
+        {
+          "title": "Functional",
+          "text": "Sort 200+ emails into actionable categories within two minutes of waking up, draft replies without re-reading the thread, and cross-reference the calendar instantly."
+        },
+        {
+          "title": "Emotional",
+          "text": "Feel in control of the overload, trust that nothing critical slips through, and end the day without inbox guilt."
+        },
+        {
+          "title": "Social",
+          "text": "Appear responsive and professional, delegate without seeming dismissive, and keep a reputation for thoughtful replies."
+        }
+      ]
+    },
+    {
+      "title": "Information Architecture",
+      "text": [
+        "MailMind departs from the flat inbox. It uses a hub-and-spoke model where the Morning Brief is the central hub, with specialised workspaces around it: Inbox, AI Drafts, Calendar and Compose, and Settings.",
+        "Content follows three tiers with progressive disclosure: the Brief as executive summary, then intent categories, then the full thread. The AI Chat Panel, Voice Mode and notifications cut across every screen."
+      ],
+      "images": [
+        "09-sitemap.png"
+      ],
+      "captions": [
+        "Sitemap: Morning Brief as the hub, with an adaptive sidebar and persistent AI chat"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "User Flow Mapping",
+      "text": [
+        "I mapped two journeys before drawing a screen. The primary flow is Morning Triage: open the app, read the three-sentence brief, work through intent segments, review AI drafts and reach inbox clear in about eight minutes.",
+        "The secondary flow is commute triage by voice: activate voice, listen to the brief, speak commands such as \"reply\" or \"approve\", and confirm through the same human-in-the-loop check."
+      ],
+      "images": [
+        "10-user-flow.png"
+      ],
+      "captions": [
+        "Morning triage and voice-driven commute triage"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Lo-fi Wireframes",
+      "text": [
+        "I wireframed the three screens that carry the most weight: the dashboard, the inbox and the thread detail. Settling hierarchy in grayscale first meant colour and the AI accent could then be used purely for meaning."
+      ],
+      "images": [
+        "11-wireframes.png"
+      ],
+      "captions": [
+        "Dashboard, inbox view and thread detail wireframes"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Key Design Decisions",
+      "bullets": [
+        {
+          "title": "Human in the loop, always",
+          "text": "An \"AI suggests:\" intent label sits on every AI action, and nothing is sent without Approve or Edit. This is the main trust mechanism."
+        },
+        {
+          "title": "Group by intent, not time",
+          "text": "High Priority, General and Bulletins replace a single chronological list."
+        },
+        {
+          "title": "Summary before detail",
+          "text": "The Morning Brief gives three sentences and urgency groups before any email is opened."
+        },
+        {
+          "title": "One workspace, no tab hopping",
+          "text": "Calendar, compose and an AI chat panel stay beside the email, so context is never lost."
+        },
+        {
+          "title": "Hands-free when needed",
+          "text": "Voice Mode is a distraction-free overlay for triage during commutes."
+        },
+        {
+          "title": "Quiet notifications",
+          "text": "Alerts are grouped by urgency and non-urgent ones are silenced to protect deep work."
+        }
+      ]
+    },
+    {
+      "title": "Hi-Fi Design: Starting the day",
+      "text": [
+        "The Morning Brief is the front door. A scannable widget gives a three-sentence summary of overnight activity, groups items by urgency and cross-references the calendar, so the first thing a user sees is a plan instead of a pile.",
+        "From there the inbox is segmented by intent: High Priority as assessed by AI, General threads and automated Bulletins. Opening a thread shows the full context with an AI-drafted reply ready to edit."
+      ],
+      "images": [
+        "01-morning-brief.png",
+        "02-inbox.png",
+        "03-thread-detail.png"
+      ],
+      "captions": [
+        "Morning Brief: summary, urgency groups, calendar cross-reference",
+        "Intent-segmented inbox",
+        "Thread detail with an AI-drafted reply"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: Getting things done",
+      "text": [
+        "The AI Drafts Queue is a horizontal card deck of generated replies. Each card carries an explicit intent label and a single-tap Approve, with Edit and Reject always in reach, and a toast confirms what just happened.",
+        "The AI Chat Panel handles the questions that normally mean several tabs and searches. A user can ask for something like \"find the invoice draft\" and get the answer without leaving the thread."
+      ],
+      "images": [
+        "05-ai-drafts.png",
+        "04-ai-chat.png"
+      ],
+      "captions": [
+        "AI Drafts Queue: intent-labelled cards with Approve, Edit and Reject",
+        "AI Chat Panel for cross-referencing past context"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Hi-Fi Design: Scheduling and voice",
+      "text": [
+        "Calendar and Compose is a synchronised split-screen. Dragging an email onto a slot schedules it and fills in a smart reply that confirms the time, so scheduling no longer means switching apps.",
+        "Voice Mode is an immersive, distraction-free overlay for hands-free triage. The assistant reads the brief aloud, accepts commands such as reply or approve, and still asks for confirmation before anything is sent."
+      ],
+      "images": [
+        "06-calendar.png",
+        "07-voice.png"
+      ],
+      "captions": [
+        "Calendar and Compose: drag an email to schedule it",
+        "Voice Mode for hands-free triage"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Design System: Calm Command",
+      "text": [
+        "The interface follows a dark-first system I called Calm Command. Neutral surfaces keep the screen quiet, and a purple gradient is reserved for AI, so anything AI-generated is recognisable at a glance. Type pairs Neue Haas Grotesk with Inter, icons use Phosphor, and colours and spacing are tokens so dark and light themes stay in sync."
+      ],
+      "images": [
+        "08-design-system.png"
+      ],
+      "captions": [
+        "Colour primitives, components and icons"
+      ],
+      "layout": "wide"
+    },
+    {
+      "title": "Outcome",
+      "text": [
+        "The result is a complete product concept: a researched problem, a hub-and-spoke architecture, five connected workspaces, a reusable design system and an interactive prototype of the full flow.",
+        "The design is ready to be tested with real users, starting with how much they trust the AI drafts and how quickly they reach inbox clear."
+      ]
+    },
+    {
+      "title": "Where it goes next",
+      "bullets": [
+        {
+          "title": "Usability testing",
+          "text": "Time the morning triage flow with first-time users and measure the real reduction against the 70% target."
+        },
+        {
+          "title": "Trust calibration",
+          "text": "Test how much explanation the \"AI suggests:\" label needs before people approve without re-reading."
+        },
+        {
+          "title": "Delegation workflows",
+          "text": "Serve Marcus's need to hand requests to teammates and track approvals."
+        },
+        {
+          "title": "Accessibility",
+          "text": "Audit contrast across both themes and add a full keyboard path for Voice Mode actions."
+        }
+      ]
+    }
+  ]
+}
